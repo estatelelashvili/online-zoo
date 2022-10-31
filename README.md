@@ -1,2 +1,1 @@
-# LINK
-https://estatelelashvili.github.io/online-zoo/pages/main/
+# Esatate Lelashvili
