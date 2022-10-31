@@ -1,32 +1,32 @@
 @font-face {
 	font-family: "Roboto-200";
-	src: url('./assets/fonts/Roboto-Thin.ttf');
+	src: url('../fonts/Roboto-Thin.ttf');
 	font-weight: normal;
 	font-style: normal;
 }
 @font-face {
 	font-family: "Roboto-300";
-	src: url('./assets/fonts/Roboto-Light.ttf');
+	src: url('../fonts/Roboto-Light.ttf');
 	font-weight: normal;
 	font-style: normal;
 }
 @font-face {
 	font-family: "Roboto-400";
-	src: url('./assets/fonts/Roboto-Medium.ttf');
+	src: url('../fonts/Roboto-Medium.ttf');
 	font-weight: normal;
 	font-style: normal;
 }
 
 @font-face {
 	font-family: "Roboto-500";
-	src: url('./assets/fonts/Roboto-Regular.ttf');
+	src: url('../fonts/Roboto-Regular.ttf');
 	font-weight: normal;
 	font-style: normal;
 }
 
 @font-face {
 	font-family: "Roboto-700";
-	src: url('./assets/fonts/Roboto-Bold.ttf');
+	src: url('../fonts/Roboto-Bold.ttf');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -106,7 +106,7 @@ nav ul li a{
 }
 
 .panda-bg{
-    background-image: url('./images/GiantPanda.png');
+    background-image: url('../../assets/images/GiantPanda.png');
     background-repeat: no-repeat;
     background-position: center;
     background-position-y: -80px;
@@ -122,7 +122,7 @@ nav ul li a{
 }
 
 .ellipse{
-    background-image: url('./images/Ellipse6.png');
+    background-image: url('../../assets/images/Ellipse6.png');
     width: 465px; 
     height: 465px; 
     background-position: center;
