@@ -288,6 +288,7 @@ h4{
     
     /* border: 1px solid red; */
     margin: auto;
+    /* border: palevioletred solid 2px; */
 }
 .gvimra{
     /* border: 1px solid red; */
@@ -296,6 +297,7 @@ h4{
     /* justify-self: flex-start;
     display: flex;
     flex-direction: column; */
+    border: palevioletred solid 2px;
 }
 
 .round-btn{
@@ -329,7 +331,7 @@ h4{
     height: 1215px;
     width: 100%;
     margin: auto;
-    /* background-color: aquamarine; */
+    
 
 }
 
@@ -345,6 +347,7 @@ h4{
     height: 1040px;
     width: 100%;
     /* border: 1px solid green; */
+    /* border: palevioletred solid 2px; */
 }
 
 .catalog-inner{
@@ -357,6 +360,7 @@ h4{
     margin: auto;
     display: flex;
     justify-content: space-between;
+    justify-content: center;
     align-items: center;
     /* border: 1px solid red; */
     /* justify-self: flex-start; */
@@ -413,15 +417,95 @@ h4{
     align-self: flex-end;
 }
 
+.friend{
+    background: linear-gradient(315.75deg, rgba(254, 210, 144, 0.7) 30.06%, #FEBDAB 100.95%, rgba(254, 210, 144, 0.7) 106.36%);
+    opacity: 0.9;
+    height: 1000px;
+    width: 1600px;
+    margin: auto;
+    padding: 70px;
+}
 
+.friends-inner{
+    margin: auto;
+    height: 835px;
+    width: 1160px;
+    background: rgba(253, 253, 255, 0.52);
+    backdrop-filter: blur(2px);
+    border-radius: 20px;
+    opacity: 0.8;
+
+}
+
+.pick{
+    color:#FE9013;
+    text-align: center;
+}
+
+.know{
+    text-align: center;
+    width: 1000px;
+    margin: auto;
+    background:  linear-gradient(#FEBDAB 100% , #FED290 70%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.covid{
+    text-align: center;
+    width: 1100px;
+    margin: auto;
+    background:  linear-gradient(#FEBDAB 100% , #FED290 70%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.even{
+    text-align: center;
+    width: 1100px;
+    background:  linear-gradient(#FEBDAB 100% , #FED290 70%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+.how{
+    text-align: center;
+    width: 1100px;
+    background:  linear-gradient(#FEBDAB 100% , #FED290 70%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
 
 
 .trio{
     display: flex;
+    width: 900px;
+    margin: auto;
 }
 
-.testimonials{
+.testimonials-container{
+    margin-left: 100px;
+    margin-top: 100px;
+    background-color: #FFFFFF;
+    width: 1500px;
+    height: 575px;
+    /* border: 2px red solid; */
     display: flex;
+}
+
+
+.testimonials-item{
+    border-radius: 20px;
+    padding: 10px;
+    width: 300px;
+    height: 800px;
+    background-color: lightgrey;
+    height: 391px;
+    width: 268px;
+    overflow-y: hidden;
 }
 
 .subtitle{
