@@ -290,7 +290,7 @@ h4{
     margin: auto;
 }
 .gvimra{
-    border: 1px solid red;
+    /* border: 1px solid red; */
     /* height: 780px;  */
     align-self: flex-end;
     /* justify-self: flex-start;
@@ -299,11 +299,20 @@ h4{
 }
 
 .round-btn{
-    width: 65px;
-    height: 65px;
+    width: 62px;
+    height: 62px;
     background-image:  linear-gradient(#F9804B, #FE9013);
     border-radius: 50%;
     border: none;
+}
+
+.arrow-left{
+    /* align-self: flex-start; */
+    border: 1px solid red;
+}
+.arrow-right{
+    /* align-self: flex-start; */
+    border: 1px solid red;
 }
 
 /* .left-btn{
@@ -327,14 +336,15 @@ h4{
 .catalog-outer{
 
     position: absolute;
-    top: 90px;
+    top: 72px;
     left: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 1017px;
+    height: 1000px;
+    height: 1040px;
     width: 100%;
-    border: 1px solid green;
+    /* border: 1px solid green; */
 }
 
 .catalog-inner{
@@ -342,16 +352,18 @@ h4{
     top: 90px;
     left: 0; */
     height: 1060px;
+    height: 1000px;
     width: 100%;
     margin: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     /* justify-self: flex-start; */
 
 }
 .catalog-grid-outer{
+    flex: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -393,7 +405,7 @@ h4{
 }
 
 .dragon-flower{
-    border: 1px solid red;
+    /* border: 1px solid red; */
     /* align-self: flex-end;
     justify-self: flex-start; */
 
