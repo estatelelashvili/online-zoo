@@ -628,8 +628,18 @@ h4{
 footer{
     height: 443px;
     background-color: #000000;
+    width: 100%;
+    margin: auto;
+    padding: 40px;
 }
 
+.footer-main-container{
+    height: 443px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: auto;
+}
 .tiny-ellipse{
     background: rgba(196, 196, 196, 0.5);
     min-width: 30px;
@@ -646,12 +656,128 @@ button img{
 .search-bar{
     color: #FFFFFF;
 }
+.search-bar input{
+    padding: 5px;
+    color: #FFFFFF;
+}
+
+.search-bar h4{
+    color: #FFFFFF;
+}
+.search-bar button{
+    color: #000000;
+    font-family: "Roboto-300";
+    height: 42px;
+    width: 129px;
+    border-radius: 5px;
+}
 
 div input{
-    border: 2px solid orange;
+    border: 1px solid orange;
     background-color: #000000;
+    height: 42px;
+    width: 228px;
+    font-family: "Roboto-400";
+    font-size: 16px;
+    color: #FFFFFF;
 }
 
 .author{
     color: #FFFFFF;
 }
+.author p {
+    font-family: "Roboto-200";
+    font-size: 16px;
+    height: 21px;
+    width: 250px;
+    line-height: 130%;
+    color: #FFFFFF;
+}
+.social-media-outer{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.social-media{
+    width: 302px;
+}
+
+.social-media-item{
+    display: flex;
+    color: #FFFFFF;
+    margin-top: 6px;
+}
+
+.social-media-anchor{
+    text-decoration: none;
+    color: #FFFFFF;
+    font-family: "Roboto-300";
+    font-size: 16px;
+}
+
+.social-media-anchor-add{
+    text-decoration: none;
+    color: #FFFFFF;
+    font-family: "Roboto-300";
+    font-size: 16px;
+    margin: 10px 0 0 10px;
+}
+
+
+.tiny-ellipse span{
+    color: #FFFFFF;
+}
+
+.footer-container1{
+    width: 512px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-around; */
+    height:90%;
+    /* border: 1px solid yellowgreen; */
+}
+
+.footer-logo{
+    width: 120px;
+   
+    align-self: center;
+    display: flex;
+    justify-content: flex-start;
+}
+.footer-btn{
+    margin: 68px 0 0 0;
+    height: 90px;
+    width: 300px;
+    align-self: flex-end;
+}
+.footer-btn button{
+    width: 300px;
+}
+.footer-container2{
+    width: 469px;
+    display: flex;
+    flex-direction: column;
+    height:90%;
+}
+.footer-container3{
+    width: 617px;
+    display: flex;
+    flex-direction: column;
+    height:90%;
+}
+
+
+.footer-container2 nav{
+    margin: 285px 0 0 97px;
+    height: 50px;
+    width: 360px;
+}
+
+
+.footer-container2 nav ul li a{
+    text-decoration: none;
+    color: #FFFFFF;
+    font-family: "Roboto-300";
+    font-size: 16px;
+}
+
