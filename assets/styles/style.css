@@ -153,6 +153,10 @@ h2{
     text-align: left;
 }
 
+h6{
+    text-transform: uppercase;
+}
+
 .watch-btn-div{
     width: 972px;
     height: 190px;
@@ -281,8 +285,8 @@ h4{
     width: 100%;
     /* background-image: url('./images/palm.png');
     background-repeat: no-repeat;  */
-    position: relative;
-    border: 1px solid red;
+    
+    /* border: 1px solid red; */
     margin: auto;
 }
 .gvimra{
@@ -308,30 +312,84 @@ h4{
 .rigth-btn{
 
 } */
-.catalog{
-    position: absolute;
-    top: 5%;
-    left: 6%;
-    height: 872px;
-    width: 1255px;
+.catalog-container{
+    position: relative;
     /* left: 220px;
     top: 1503px; */
     border-radius: 0px;
-    
-    background-color: aquamarine;
+    height: 1215px;
+    width: 100%;
+    margin: auto;
+    /* background-color: aquamarine; */
 
+}
+
+.catalog-outer{
+
+    position: absolute;
+    top: 90px;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 1017px;
+    width: 100%;
+    border: 1px solid green;
 }
 
 .catalog-inner{
+    /* position: absolute;
+    top: 90px;
+    left: 0; */
+    height: 1060px;
+    width: 100%;
+    margin: auto;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    border: 1px solid red;
     /* justify-self: flex-start; */
 
 }
+.catalog-grid-outer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .catalog-grid{
-    display: grid;
+    height: 880px;
+    width: 1160px;
+
     justify-self: flex-start;
+    display: grid;
     grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    row-gap: 10px;
+}
+
+.grid-card{
+    border: 1px solid #FE9013;
+    height: 426px;
+    width: 368px;
+    border-radius: 5px;
+
+}
+
+.grid-card img{
+
+    border-radius: 5px;
+}
+
+.catalog-legend{
+    display: flex;
+}
+
+.btn-catalog{
+    margin-top: 46px;
+    letter-spacing: 0.05em;
+    text-align: center;
+    /* justify-self: end; */
 }
 
 .dragon-flower{
