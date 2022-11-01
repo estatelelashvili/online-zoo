@@ -535,8 +535,7 @@ h4{
 }
 .testimonials-main-container{
     width: 100%;
-    height: 812px;
-    border: 1px solid black;
+    height: 775px;
 }
 .testimonials-container{
     background-color: #FFFFFF;
@@ -587,28 +586,45 @@ h4{
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
     border: 1px solid orange;
-     width: 500px; 
+     width: 486px; 
      height: 7px;
      display: block;
      background-color: #F5F7F6;
 }
 
 .gauge{
-    border: 1px solid red;
     display: flex;
-    /* flex-direction: column; */
     margin: auto;
     width: 700px;
     height: 50px;
 }
 
-.feed-back-btn{
-    display: inline-block;
-    border-radius: 5px;
-    width: 700px;
-    margin: auto;
-    border: 1px solid red;
+
+.feed-back-btn-div{
+    display: flex;
+    justify-content: flex-start;
+    width: 736px;
+    height: 75px;
 }
+
+.feed-back-btn{
+    margin: auto;
+    letter-spacing: 0.05em;
+    border-radius: 5px;
+}
+
+.leaf-feedback-container{
+    display: flex;
+}
+
+.leaf{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    width: 862px;
+    height: 378px;
+}
+
 footer{
     height: 443px;
     background-color: #000000;
