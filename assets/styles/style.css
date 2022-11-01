@@ -236,13 +236,10 @@ h4{
     color:#333B41;
 }
 
-
-
 .founded{
     height: 42px;
     width: 465px;
     font-family: "Roboto-500";
-    /* font-weight: bold; */
     font-size: 16px;
     font-weight: 400;
     line-height: 22px;
@@ -276,30 +273,6 @@ h4{
     flex: 0.87;
 }
 
-
-
-.catalog-container{
-    display: flex;
-    justify-content: space-between;
-    height: 1150px;
-    width: 100%;
-    /* background-image: url('./images/palm.png');
-    background-repeat: no-repeat;  */
-    
-    /* border: 1px solid red; */
-    margin: auto;
-    /* border: palevioletred solid 2px; */
-}
-.gvimra{
-    /* border: 1px solid red; */
-    /* height: 780px;  */
-    align-self: flex-end;
-    /* justify-self: flex-start;
-    display: flex;
-    flex-direction: column; */
-    border: palevioletred solid 2px;
-}
-
 .round-btn{
     width: 62px;
     height: 62px;
@@ -308,53 +281,44 @@ h4{
     border: none;
 }
 
-.arrow-left{
-    /* align-self: flex-start; */
-    border: 1px solid red;
-}
-.arrow-right{
-    /* align-self: flex-start; */
-    border: 1px solid red;
-}
-
-/* .left-btn{
+.gvimra{
     align-self: flex-end;
 }
-.rigth-btn{
-
-} */
 .catalog-container{
+    display: flex;
+    justify-content: space-between;
     position: relative;
-    /* left: 220px;
-    top: 1503px; */
     border-radius: 0px;
-    height: 1215px;
+    height: 1210px;
     width: 100%;
     margin: auto;
-    
-
 }
 
 .catalog-outer{
-
     position: absolute;
     top: 72px;
     left: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 1000px;
-    height: 1040px;
+    height: 1038px;
     width: 100%;
-    /* border: 1px solid green; */
-    /* border: palevioletred solid 2px; */
 }
-
+.arrow-left{
+    margin-right: 20px ;
+    display: flex;
+    justify-content: flex-end;
+    height: 72px;
+    flex: 0.35;
+}
+.arrow-right{
+    margin-left: 20px ;
+    display: flex;
+    justify-content: flex-start;
+    height: 72px;
+    flex: 0.35;
+}
 .catalog-inner{
-    /* position: absolute;
-    top: 90px;
-    left: 0; */
-    height: 1060px;
     height: 1000px;
     width: 100%;
     margin: auto;
@@ -362,10 +326,8 @@ h4{
     justify-content: space-between;
     justify-content: center;
     align-items: center;
-    /* border: 1px solid red; */
-    /* justify-self: flex-start; */
-
 }
+
 .catalog-grid-outer{
     flex: 1;
     display: flex;
@@ -376,7 +338,6 @@ h4{
 .catalog-grid{
     height: 880px;
     width: 1160px;
-
     justify-self: flex-start;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -405,15 +366,9 @@ h4{
     margin-top: 46px;
     letter-spacing: 0.05em;
     text-align: center;
-    /* justify-self: end; */
 }
 
 .dragon-flower{
-    /* border: 1px solid red; */
-    /* align-self: flex-end;
-    justify-self: flex-start; */
-
-    /* height: 780px;  */
     align-self: flex-end;
 }
 
