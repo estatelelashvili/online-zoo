@@ -80,6 +80,8 @@ header{
     cursor: pointer;
     width: 120px;
     text-align: center;
+    color: #FFFFFF;
+    text-decoration: none;
 }
 
 .single-p:hover{
