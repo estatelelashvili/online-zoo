@@ -195,7 +195,8 @@ h6{
     font-weight: bolder;
     font-size: 15px;
     padding: 10px;
-    background-image:  linear-gradient(#F9804B, #FE9013);
+    /* background-image:  linear-gradient(#F9804B, #FE9013); */
+    background-color:orange;
     color: #FFFFFF;
     text-align: center;
     text-transform: uppercase;
@@ -203,6 +204,10 @@ h6{
     line-height: 140%;
     border-radius: 25px;
     border: none;
+}
+
+.watch-btn:hover{
+    background-color:#E47209;
 }
 
 .wild-world{
@@ -299,6 +304,7 @@ h4{
     background-image:  linear-gradient(#F9804B, #FE9013);
     border-radius: 50%;
     border: none;
+    cursor: pointer;
 }
 
 .gvimra{
@@ -330,6 +336,7 @@ h4{
     justify-content: flex-end;
     height: 72px;
     flex: 0.35;
+    cursor: pointer;
 }
 .arrow-right{
     margin-left: 20px ;
@@ -337,6 +344,7 @@ h4{
     justify-content: flex-start;
     height: 72px;
     flex: 0.35;
+    cursor: pointer;
 }
 .catalog-inner{
     height: 1000px;
@@ -370,12 +378,17 @@ h4{
     height: 426px;
     width: 368px;
     border-radius: 5px;
-
+    position: relative;
 }
 
 .grid-card img{
 
     border-radius: 5px;
+}
+
+.grid-card img:hover{
+    transform: scale(1.1);
+    transition: 1s;
 }
 
 .catalog-legend{
@@ -465,6 +478,7 @@ h4{
 .undeline{
     text-decoration: underline #F9804B;
     text-underline-offset: 5px;
+    cursor: pointer;
 }
 .how{
     font-family: "Roboto-500";
@@ -580,6 +594,12 @@ h4{
     width: 268px;
     overflow-y: hidden;
     border: 1px solid orange;
+    background: #F1F3F2;
+    border-radius: 20px;
+    background: linear-gradient(#f8f9fa, #f8f9fa) padding-box,
+    linear-gradient(to right, #f3a1ff, #fed290) border-box;
+    /* border-radius: 10px; */
+    border: 2px solid transparent;
 }
 
 .subtitle{
