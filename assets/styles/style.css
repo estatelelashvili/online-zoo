@@ -406,9 +406,32 @@ h4{
 	-ms-filter: brightness(100%);
 	filter: brightness(100%);
 }
+.grass{
+    margin-top: 5px;
+    height: 37px;
+    width: 33px;
+}
 
 .catalog-legend{
     display: flex;
+    width: 100%;
+    
+}
+
+.catalog-legend-inner{
+    width: 322px;
+    padding: 6px 0 0 18px;
+}
+
+.catalog-legend-inner h6{
+    font-family: "Roboto-500";
+    font-size: 16px;
+    width: 322px;
+}
+.catalog-legend-inner p{
+    font-family: "Roboto-300";
+    font-size: 15px;
+    width: 322px;
 }
 
 .btn-catalog{
@@ -619,16 +642,53 @@ h4{
     border-radius: 20px;
     background: linear-gradient(#f8f9fa, #f8f9fa) padding-box,
     linear-gradient(to right, #f3a1ff, #fed290) border-box;
-    /* border-radius: 10px; */
     border: 2px solid transparent;
 }
 
-.subtitle{
-    width: 200px;
+.testimonials-item-container{
+    margin: 3px 0 0 5px;
     display: flex;
-    justify-content: space-around;
 }
 
+.testimonials-item-container img{
+    height: 37px;
+    width: 37px;
+}
+
+.outer-subtitle{
+    margin: 1px 0 0 12px;
+    display: flex;
+    flex-direction: column;
+}
+
+.outer-subtitle h6{
+    text-transform: capitalize;
+    color: #000000;
+    font-family: "Roboto-300";
+    font-size: 16px;
+    width: 150px;
+}
+.subtitle{
+    margin: 2px 0 0 0;
+    font-family: 'Roboto-300';
+    font-size: 15px;
+    color: #BDBDBD;
+    width: 168px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.test-txt{
+    margin: 10px 0 0 6px;
+    font-family: "Roboto-300";
+    font-size: 15px;
+    line-height: 18px;
+    letter-spacing: 0em;
+    color: gray;
+    height: 307px;
+    overflow-y: hidden;
+    width: 237px;
+}
 
 .testimonial-card{
     height: 391px;
