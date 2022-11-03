@@ -14,7 +14,7 @@ for (let index = 0; index < catalogueImgArr.length; index++) {
     -ms-filter: brightness(50%);
     filter: brightness(50%);`;
     catalogueImgArr[index].getElementsByTagName('h6')[0].style.cssText = `
-      width: 322px;
+      width: 312px;
       text-align: center;
       margin: auto;
       transform: translate(0,-230px); 
@@ -24,7 +24,7 @@ for (let index = 0; index < catalogueImgArr.length; index++) {
       font-family: "Roboto-500";
     `;
     catalogueImgArr[index].getElementsByTagName('p')[0].style.cssText = `
-      width: 322px;
+      width: 312px;
       margin: auto;
       text-align: center;
       transform: translate(0,-200px); 
