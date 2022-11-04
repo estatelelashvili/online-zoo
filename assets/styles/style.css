@@ -696,17 +696,22 @@ h4{
     margin: 21px 0 0 50px;
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
-    border: 1px solid orange;
+    border: 1px solid #FE9013;
      width: 113px; 
      height: 7px;
      display: block;
-     background-color: orange;
+     background-color: #FE9013;
+}
+
+.gauge-btn:hover{
+    background-color: #F9804B;   
+    border: 1px solid #F9804B;
 }
 .gauge-btn2{
     margin: 21px 0 0 0;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
-    border: 1px solid orange;
+    border: 1px solid #FE9013;
      width: 486px; 
      height: 7px;
      display: block;
@@ -718,6 +723,7 @@ h4{
     margin: auto;
     width: 700px;
     height: 50px;
+    cursor: pointer;
 }
 
 
