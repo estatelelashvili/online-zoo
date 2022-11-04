@@ -507,6 +507,7 @@ h4{
 }
 
 .undeline{
+    color: #333B41;
     text-decoration: underline #F9804B;
     text-underline-offset: 5px;
     cursor: pointer;
