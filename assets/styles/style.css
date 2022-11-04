@@ -386,6 +386,7 @@ h4{
     width: 368px;
     border-radius: 5px;
     position: relative;
+    cursor: pointer;
 }
 
 .grid-card img{
@@ -476,10 +477,11 @@ h4{
     width: 844px;
     height: 29px;
     margin: 35px 0 0 70px;
-    background:  linear-gradient(#FEBDAB 100% , #FED290 70%);
+    color: #333B41;
+    /* background:  linear-gradient(#FEBDAB 100% , #FED290 70%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    background-clip: text;
+    background-clip: text; */
 }
 
 .covid{
@@ -489,10 +491,7 @@ h4{
     width: 100%;
     margin: 38px 0 0 21px;
     letter-spacing: 0.006em;
-    background:  linear-gradient(#FEBDAB 100% , #FED290 70%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    color: #333B41
 }
 
 .even{
@@ -504,10 +503,7 @@ h4{
     line-height: 130%;
     margin: 12px 0 0 68px;
     letter-spacing: 0;
-    background:  linear-gradient(#FEBDAB 100% , #FED290 70%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    color: #333B41;
 }
 
 .undeline{
@@ -524,10 +520,7 @@ h4{
     margin: auto;
     margin-top: 62px;
     letter-spacing: 0.006em;
-    background:  linear-gradient(#FEBDAB 100% , #FED290 70%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    color: #333B41;
 }
 
 
@@ -561,10 +554,7 @@ h4{
     line-height: 22px;
     height: 46px;
     width: 168px;
-    background:  linear-gradient(#FEBDAB 100% , #FED290 70%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    color: #333B41;
 }
 .feed-btn-div{
     width: 100%;
