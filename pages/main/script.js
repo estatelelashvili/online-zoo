@@ -2,6 +2,13 @@ document.getElementById('donate-btn').onclick = function () {
   location.href = '../donate/index.html';
 };
 
+document.getElementById('logo-anchor').onclick = function () {
+  location.href = './index.html';
+};
+document.getElementById('logo-anchor2').onclick = function () {
+  location.href = './index.html';
+};
+
 const catalogueImgArr = document.getElementsByClassName('grid-card');
 for (let index = 0; index < catalogueImgArr.length; index++) {
   catalogueImgArr[index].onmouseenter = () => {

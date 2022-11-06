@@ -75,11 +75,23 @@ header{
     border: 1px solid #FFFFFF;
     border-radius: 2px;
     position: relative;
+    cursor: pointer;
 }
 
 
 
 .logo-inner{
+    text-align: center;
+    line-height: 120%;
+    margin: 5px 0 0 5px;
+    letter-spacing: 0.05em;
+    font-family: "Roboto-200";
+    font-size: 18px;
+    width: 73px;
+    height: 45px;
+    color:#FFFFFF;
+}
+.logo-inner2{
     text-align: center;
     line-height: 120%;
     margin: 5px 0 0 5px;
