@@ -197,14 +197,15 @@ nav ul li a{
     font-family: "Roboto-200";
     font-style: normal;
     font-weight: 700;
-    font-size: 36px;
-    letter-spacing: 0.02rem;
-    text-align: center;
+    font-size: 35px;
+    letter-spacing: 0.05rem;
+    text-align: left;
     text-transform: uppercase;
     color: #FFFFFF;
-    width: 1176px;
+    width: 1160px;
     margin: auto;
     margin-top: 0;
+    /* border: 1px solid red; */
 }
 
 h2{
@@ -557,16 +558,16 @@ h4{
 }
 
 .even{
-    font-family: "Roboto-400";
+    font-family: "Roboto-500";
     font-size: 16px;
     /* text-align: center; */
     line-height: 23px;
-    letter-spacing: 0;
+    letter-spacing: 0.0045rem;
     color: #FFFFFF;
     height: 94px;
     width: 1160px;
     margin: auto;
-    margin-top: 10px;
+    margin-top: 2px;
     /* letter-spacing: 0.01rem; */
 }
 
@@ -1247,6 +1248,10 @@ div input{
   }
   
   .button-prop input[type="radio"]:checked + #outer-circle {
+    visibility: visible;
+    color: #FE9013;
+  }
+  .button-prop input[type="radio"]:hover + #outer-circle {
     visibility: visible;
     color: #FE9013;
   }
