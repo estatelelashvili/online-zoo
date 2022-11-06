@@ -10,16 +10,21 @@
   <body>
     <header>
       <div class="logo-div">
-        <a href="./index.html">
-          <img class="logo" src="../../assets/icons/logo_footer.png" alt="" />
-        </a>
+        <div class="logo" id="logo-anchor">
+          <h1 class="logo-inner">PetStory online</h1>
+          <img
+            class="bamboo-stick"
+            src="../../assets/icons/bamboo.png"
+            alt=""
+          />
+        </div>
       </div>
       <nav>
         <ul>
-          <li><a href="">About</a></li>
+          <li><a href="../main/index.html">About</a></li>
           <li><a href="">Map</a></li>
           <li><a href="">Zoos</a></li>
-          <li><a href="../donate/index.html" class="highlighted">Donate</a></li>
+          <li><a href="" class="highlighted">Donate</a></li>
           <li><a href="">Contact us</a></li>
         </ul>
       </nav>
@@ -31,17 +36,15 @@
         >
       </div>
     </header>
-    <!-- <h2 class="dolla">$</h2>
-    <h2 class="dolla2">$</h2>
-    <h1>Under Construction!</h1>
-    <a href="../main/index.html">Go Back</a> -->
     <main>
       <section>
         <div class="panda-bg"></div>
       </section>
       <section>
         <div class="friend">
-          <h1>THE ZOO HAS OFFICIALLY REOPENED BUT WE STILL NEED YOUR HELP!</h1>
+          <h2 id="special-heading">
+            THE ZOO HAS OFFICIALLY REOPENED BUT WE STILL NEED YOUR HELP!
+          </h2>
           <p class="even">
             Even though the Zoo has been able to reopen, we are at a greatly
             reduced capacity with educational programs and public and private
@@ -444,40 +447,43 @@
                 <span class="clearBtn">$</span>
               </div>
             </div>
-            <div class="two-radio">
-              <div class="radio-outer">
-                <div class="button-prop-subscription">
-                  <input
-                    type="radio"
-                    id="option"
-                    name="sameas2"
-                    value="option"
-                  />
-                  <div id="outer-circle-subscription">
-                    <div id="inner-circle3-subscription"></div>
+            <div class="line-container2">
+              <div class="button-prop-container2">
+                <div class="button-prop2-outer">
+                  <div class="button-prop2">
+                    <input
+                      type="radio"
+                      id="option"
+                      name="sameas"
+                      value="option"
+                    />
+                    <div id="outer-circle2">
+                      <div id="inner-circle32"></div>
+                    </div>
                   </div>
+                  <p class="pay-p">Monthly</p>
                 </div>
-                <p class="subscription-p">Monthly</p>
-              </div>
-              <div class="radio-outer">
-                <div class="button-prop-subscription">
-                  <input
-                    type="radio"
-                    id="option"
-                    name="sameas2"
-                    value="option"
-                  />
-                  <div id="outer-circle-subscription">
-                    <div id="inner-circle3-subscription"></div>
+                <div class="button-prop2-outer">
+                  <div class="button-prop2">
+                    <input
+                      type="radio"
+                      id="option"
+                      name="sameas"
+                      value="option"
+                      checked
+                    />
+                    <div id="outer-circle2">
+                      <div id="inner-circle32"></div>
+                    </div>
                   </div>
+                  <p class="pay-p">Once</p>
                 </div>
-                <p class="subscription-p">Once</p>
               </div>
             </div>
             <div class="feed-btn-div">
               <button class="feed-btn">feed a friend now</button>
             </div>
-            <p>Share with your friends on social networks</p>
+            <p class="share">Share with your friends on social networks</p>
           </div>
         </div>
       </section>
@@ -558,6 +564,7 @@
         </div>
       </div>
     </footer>
+    <script src="./script.js"></script>
   </body>
 </html>
 
