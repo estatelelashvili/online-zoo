@@ -947,16 +947,184 @@ div input{
 
 /* DONATE */
 
-/* .money-bar{
-    width: 1100px;
-}*/
+.money-bar{
+    margin: 50px 0 0 0;
+}
+.panda-meal{
+    width: 550px;
+    height: 300px;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
 
- /* .money-bar-p{
-    height: 22px;
-    width: 57px;
+.panda-diet{
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.panda-diet h6{
+    font-family: "Roboto-500";
+    font-size: 72px;
+}
+
+.panda-diet p{
     font-family: "Roboto-400";
     font-size: 16px;
-}  */
+}
+
+.multi{
+    height: 14px;
+    width: 14px;
+}
+
+.multi-container{
+    width: 70px;
+    height: 100px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.panda-img-container{
+    align-self: flex-end;
+    width: 300px;
+    height: 242px;
+}
+
+.money-input{
+    margin: auto;
+    margin-top: 100px;
+    width: 268px;
+    height: 54px;
+}
+
+.text-container {
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .text-container input{
+    color: #929699;
+    background-color: transparent;
+    border: 1px solid #929699;
+    height: 54px;
+    width: 268px;
+    border-radius: 2px;
+  }
+  .clearBtn {
+    background-color: transparent;
+    color: #929699;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    transition: right 0.2s;
+    font-family: "Trebuchet-Bold";
+  }
+
+  .two-radio{
+    display: flex;
+    width: 253px;
+    /* border: 1px solid red; */
+    height: 150px;
+    justify-content: space-between;
+    margin: auto;
+    padding: 15px 35px 0 20px;
+  }
+
+  .button-prop-subscription {
+    position: relative;
+    /* margin: 10px 0 0 120px; */
+    margin: 10px 0 0 0;
+    height: 16px;
+    width: 16px;
+    background-color: transparent;
+    border: 1px solid #F9804B;
+    border-radius: 50%;
+  }
+
+  .button-prop-subscription input {
+    position: absolute;
+    top: -20px;
+    left: -30px;
+    right: 0;
+    bottom: 0;
+    border-radius: 10px;
+    width: 80px;
+    height: 88px;
+  }
+
+  .button-prop-subscription input[type="radio"] {
+    opacity: 0.011;
+    z-index: 100;
+    cursor: pointer;
+    border-radius: 10px;
+  }
+
+  .button-prop-subscription input[type="radio"]:checked + #outer-circle-subscription {
+    visibility: visible;
+    color: #FE9013;
+  }
+
+  #outer-circle-subscription{
+    font-family: "Roboto-400";
+    color:#333B41;
+    visibility: hidden;
+    background: transparent;
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+    position: relative;
+    bottom: 50%;
+    right: 50%;
+  }
+
+  #inner-circle3-subscription{
+    position: absolute;
+    background: transparent;
+    border-radius: 50%;
+    height: 9px;
+    width: 9px;
+    top: 0.7685rem;
+    left: 0.79rem;
+    margin: -3px 0px 0px -3px;
+    background-color: #F9804B;
+  }
+
+  .two-radio-input{
+    position: relative;
+    /* border: 1px solid red; */
+    width: 16px;
+    height: 16px;
+    background-color: transparent;
+    /* border-color: #F9804B; */
+    border-radius: 50%;
+  }
+
+  .two-radio-input p{
+    background-color: red;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+  }
+
+  .radio-outer{
+    display: flex;
+  }
+
+  .subscription-p{
+    margin: 8px 0 0 12px;
+  }
+
+ .money-bar-p{
+    margin: 0 0 0 66px;
+    font-family: "Roboto-400";
+    font-size: 16px;
+} 
 
 .line-container-inner{
     /* margin-top: -14px; */
@@ -976,7 +1144,7 @@ div input{
   }
   .line-container{
     /* margin: 29px 0 0 120px; */
-    margin: 18px 0 0 95px;
+    margin: 18px 0 0 62px;
     position: relative;
     height: 27px;
     width: 976px;
