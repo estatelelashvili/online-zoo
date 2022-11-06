@@ -54,7 +54,6 @@ header{
     font-size: 16px;
     font-weight: 500;
     letter-spacing: 0.0em;
-    position: relative;
 }
 
 .logo-div{
@@ -62,11 +61,34 @@ header{
     width: 302px;
     display: flex;
     justify-content: flex-end;
-    
 }
+
+.bamboo-stick{
+    position: absolute;
+    top: 43%;
+    left: 9%;
+}
+
 .logo{
-    max-width: 85px;
-    max-height: 85px;
+    width: 82px;
+    height: 52px;
+    border: 1px solid #FFFFFF;
+    border-radius: 2px;
+    position: relative;
+}
+
+
+
+.logo-inner{
+    text-align: center;
+    line-height: 120%;
+    margin: 5px 0 0 5px;
+    letter-spacing: 0.05em;
+    font-family: "Roboto-200";
+    font-size: 18px;
+    width: 73px;
+    height: 45px;
+    color:#FFFFFF;
 }
 .single{
     /* flex: 1; */
@@ -153,10 +175,7 @@ nav ul li a{
 }
 
 
-h1{
-    position: absolute;
-    top: 90px;
-    left: 810px;
+.main-title{
     margin: 74px 0 0 72px;
     font-family: "Roboto-700";
     font-style: normal;
