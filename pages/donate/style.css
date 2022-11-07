@@ -72,7 +72,7 @@ header{
 .bamboo-stick{
     position: absolute;
     top: 43%;
-    left: 15%;
+    left: 12%;
 }
 
 .logo{
@@ -88,8 +88,8 @@ header{
     text-align: center;
     line-height: 120%;
     margin: 5px 0 0 5px;
-    letter-spacing: 0.02em;
-    font-family: "Roboto-300";
+    letter-spacing: 0.04em;
+    font-family: "Roboto-200";
     font-size: 18px;
     width: 73px;
     height: 45px;
@@ -192,21 +192,6 @@ nav ul li a{
     background-size: cover;
 }
 
-
-h1{
-    font-family: "Roboto-200";
-    font-style: normal;
-    font-weight: 700;
-    font-size: 35px;
-    letter-spacing: 0.05rem;
-    text-align: left;
-    text-transform: uppercase;
-    color: #FFFFFF;
-    width: 1160px;
-    margin: auto;
-    margin-top: 0;
-    /* border: 1px solid red; */
-}
 #special-heading{
     font-family: "Roboto-200";
     font-style: normal;
@@ -517,7 +502,7 @@ h4{
     height: 1482px;
     width: 1600px;
     /* margin: auto; */
-    padding: 42px 0 0 0;
+    padding: 36px 0 0 0;
 }
 
 .friends-inner{
@@ -581,7 +566,7 @@ h4{
     height: 94px;
     width: 1160px;
     margin: auto;
-    margin-top: 12px;
+    margin-top: 1px;
     /* letter-spacing: 0.01rem; */
 }
 
@@ -646,6 +631,7 @@ h4{
     align-items: center;
     margin: auto;
     padding: 0 0 0 10px;
+    cursor: pointer;
 }
 .feed-btn{
     cursor: pointer;
@@ -845,6 +831,14 @@ footer{
     border-radius: 50%;
 }
 
+.social-media-anchor-add:hover{
+    color: #FE9013
+}
+
+.tiny-ellipse:hover{
+    background: #FE9013
+}
+
 button img{
     padding-top: 4px;
 }
@@ -865,13 +859,20 @@ button img{
     letter-spacing: 0.01em;
     color: #FFFFFF;
 }
-.search-bar button{
+#search-bar-button{
     color: #000000;
-    font-family: "Roboto-300";
-    height: 44px;
+    background-color:#FFFFFF;;
+    font-family: "Roboto-400";
+    font-size: 16px;
+    height: 40px;
     width: 129px;
     border-radius: 5px;
     cursor: pointer;
+    border: none;
+}
+
+#search-bar-button:hover{
+    opacity: 0.7;
 }
 
 div input{
@@ -934,7 +935,7 @@ div input{
     color: #FFFFFF;
     font-family: "Roboto-300";
     font-size: 16px;
-    margin: 10px 0 0 10px;
+    margin: 8px 0 0 10px;
 }
 
 
@@ -1077,7 +1078,7 @@ div input{
     right: 25px;
     transition: right 0.2s;
     font-family: "Trebuchet-Bold";
-    font-size: 20px;
+    font-size: 21px;
   }
 
   .two-radio{
@@ -1223,7 +1224,8 @@ div input{
     left: 0;
     margin-left: 25px;
     width: 920px;
-    height: 600px;
+    height: 100px;
+    /* height: 600px; */
     /* width: fit-content; */
     display: flex;
     justify-content: space-between;
@@ -1268,10 +1270,10 @@ div input{
     visibility: visible;
     color: #FE9013;
   }
-  /* .button-prop input[type="radio"]:hover + #outer-circle {
+  .button-prop input[type="radio"]:hover + #outer-circle {
     visibility: visible;
     color: #FE9013;
-  } */
+  }
 
 
   .button-prop:hover {
@@ -1337,13 +1339,9 @@ div input{
   /* MUTUALLY EXCLUSIVE RADIO BUTTONS */
 
   .line-container2{
-      /* margin: 29px 0 0 120px; */
-      /* margin: 18px 0 0 62px; */
-      
       position: relative;
       height: 22px;
       width: 232px;
-      /* border: 1px solid #404950; */
       background-color: transparent;
       margin: auto;
       margin-top: 26px;
@@ -1351,45 +1349,29 @@ div input{
 
   .button-prop-container2{
     position: absolute;
-    /* top: -2px;
-    left: 0;
-    margin-left: 25px; */
     width: 207px;
     height: 22px;
     margin: auto;
-    /* width: fit-content; */
     display: flex;
     justify-content: space-between;
-    /* border: 2px solid green; */
   }
 
-  .button-prop2 {
+  .monthly-radio-button-container {
     position: relative;
-    /* margin: 10px 0 0 0; */
     height: 16px;
     width: 16px;
-    /* height: 10px;
-    width: 10px; */
     background-color: transparent;
     border: 1px solid #F9804B;
     border-radius: 50%;
   }
   
-  .button-prop2 input {
+  .monthly-radio-button-container input {
     position: absolute;
-    /* top: -20px;
-    left: -30px; */
-    /* right: 0;
-    bottom: 0; */
-    /* background-color: red;
-    border-radius: 10px;
-    outline: 2px solid pink; */
     width: 80px;
-    height: 88px;
+    height: 28px;
   }
 
-  
-  .button-prop2 input[type="radio"] {
+  .monthly-radio-button-container input[type="radio"] {
     opacity: 0.011;
     z-index: 100;
     cursor: pointer;
@@ -1399,18 +1381,46 @@ div input{
     
   }
   
-  .button-prop2 input[type="radio"]:checked + #outer-circle2 {
+  .monthly-radio-button-container input[type="radio"]:checked + #outer-circle2 {
     visibility: visible;
     color: #FE9013;
   }
-  /* .button-prop2 input[type="radio"]:hover + #outer-circle2 {
+
+  .monthly-radio-button-container:hover {
+    cursor: pointer;
+  }
+
+  .once-radio-button-container {
+    position: relative;
+    height: 16px;
+    width: 16px;
+    background-color: transparent;
+    border: 1px solid #F9804B;
+    border-radius: 50%;
+  }
+  
+  .once-radio-button-container input {
+    position: absolute;
+    width: 80px;
+    height: 28px;
+  }
+
+  .once-radio-button-container input[type="radio"] {
+    opacity: 0.011;
+    z-index: 100;
+    cursor: pointer;
+    border-radius: 10px;
+    outline: 2px solid pink;
+    border: solid red 1px;
+    
+  }
+  
+  .once-radio-button-container input[type="radio"]:checked + #outer-circle2 {
     visibility: visible;
     color: #FE9013;
-  } */
+  }
 
-
-  .button-prop2:hover {
-    color: silver;
+  .once-radio-button-container:hover {
     cursor: pointer;
   }
 
@@ -1456,4 +1466,8 @@ div input{
     /* border: 1px solid red; */
     height: 50px;
     width: 95px;
+  }
+
+  #logo-anchor2{
+    border: 1px solid gray;
   }

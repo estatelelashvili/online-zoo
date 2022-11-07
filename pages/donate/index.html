@@ -11,7 +11,7 @@
     <header>
       <div class="logo-div">
         <div class="logo" id="logo-anchor">
-          <p class="logo-inner">PetStory online</p>
+          <h1 class="logo-inner">PetStory online</h1>
           <img
             class="bamboo-stick"
             src="../../assets/icons/bamboo.png"
@@ -42,7 +42,9 @@
       </section>
       <section>
         <div class="friend">
-          <h1>THE ZOO HAS OFFICIALLY REOPENED BUT WE STILL NEED YOUR HELP!</h1>
+          <h2 id="special-heading">
+            THE ZOO HAS OFFICIALLY REOPENED BUT WE STILL NEED YOUR HELP!
+          </h2>
           <p class="even">
             Even though the Zoo has been able to reopen, we are at a greatly
             reduced capacity with educational programs and public and private
@@ -80,9 +82,7 @@
             <div class="money-bar">
               <p class="money-bar-p">Amount</p>
               <div class="line-container">
-                <!-- <div class="line-container-inner"> -->
                 <p class="line"></p>
-                <!-- </div> -->
                 <div class="button-prop-container">
                   <div class="button-prop">
                     <input
@@ -443,13 +443,14 @@
             <div class="money-input">
               <form name="form1" class="text-container">
                 <input
+                  type="number"
                   id="fname"
                   style="padding-left: 10px"
                   placeholder="Another amount"
-                  type="number"
                   name="another-money"
                   min="0"
                   max="9999"
+                  oninput="this.value = this.value.replace(/\D+/g, '')"
                   required
                 />
                 <span class="dollar-span">$</span>
@@ -458,7 +459,7 @@
             <div class="line-container2">
               <div class="button-prop-container2">
                 <div class="button-prop2-outer">
-                  <div class="button-prop2">
+                  <div class="monthly-radio-button-container">
                     <input
                       type="radio"
                       id="option"
@@ -472,7 +473,7 @@
                   <p class="pay-p">Monthly</p>
                 </div>
                 <div class="button-prop2-outer">
-                  <div class="button-prop2">
+                  <div class="once-radio-button-container">
                     <input
                       type="radio"
                       id="option"
@@ -561,8 +562,11 @@
         <div class="footer-container3">
           <div class="search-bar">
             <h4>Subscribe to our news</h4>
-            <input type="email" placeholder="Enter your email" />
-            <button>Submit</button>
+            <form action="">
+              <input type="email" placeholder="Enter your email" required />
+              <button id="search-bar-button">Submit</button>
+              <!-- <input id="search-bar-button" type="submit" value="Submit" /> -->
+            </form>
           </div>
           <div class="author">
             <a
