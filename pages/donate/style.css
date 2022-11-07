@@ -146,6 +146,13 @@ nav{
     justify-content: flex-end;
 }
 
+nav:hover{
+    cursor: pointer;
+    border: 2px solid #251e1e;
+    border-radius: 20px;
+    height: 50px;
+}
+
 ul{
     width: 536px;
     display: flex;
