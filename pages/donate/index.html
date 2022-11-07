@@ -441,17 +441,19 @@
               </div>
             </div>
             <div class="money-input">
-              <div class="text-container">
+              <form name="form1" class="text-container">
                 <input
+                  id="fname"
                   style="padding-left: 10px"
-                  type="number"
                   placeholder="Another amount"
-                  maxlength="4"
-                  pattern="\d{4}"
+                  type="number"
+                  name="another-money"
+                  min="0"
+                  max="9999"
                   required
                 />
                 <span class="dollar-span">$</span>
-              </div>
+              </form>
             </div>
             <div class="line-container2">
               <div class="button-prop-container2">
@@ -570,7 +572,6 @@
             <a href="https://rs.school/" class="copyR"
               >©RSSchool & ©Yem Digital 2021</a
             >
-            <!-- <p class="copyR">©RSSchool & ©Yem Digital 2021</p> -->
           </div>
         </div>
       </div>
