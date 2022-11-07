@@ -11,7 +11,7 @@
     <header>
       <div class="logo-div">
         <div class="logo" id="logo-anchor">
-          <h1 class="logo-inner">PetStory online</h1>
+          <p class="logo-inner">PetStory online</p>
           <img
             class="bamboo-stick"
             src="../../assets/icons/bamboo.png"
@@ -42,9 +42,7 @@
       </section>
       <section>
         <div class="friend">
-          <h2 id="special-heading">
-            THE ZOO HAS OFFICIALLY REOPENED BUT WE STILL NEED YOUR HELP!
-          </h2>
+          <h1>THE ZOO HAS OFFICIALLY REOPENED BUT WE STILL NEED YOUR HELP!</h1>
           <p class="even">
             Even though the Zoo has been able to reopen, we are at a greatly
             reduced capacity with educational programs and public and private
@@ -180,6 +178,7 @@
                       id="option"
                       name="sameas"
                       value="option"
+                      checked
                     />
                     <div id="outer-circle">
                       <div id="inner-circle"></div>
@@ -443,8 +442,15 @@
             </div>
             <div class="money-input">
               <div class="text-container">
-                <input type="number" placeholder="Another Amount" />
-                <span class="clearBtn">$</span>
+                <input
+                  style="padding-left: 10px"
+                  type="number"
+                  placeholder="Another amount"
+                  maxlength="4"
+                  pattern="\d{4}"
+                  required
+                />
+                <span class="dollar-span">$</span>
               </div>
             </div>
             <div class="line-container2">
@@ -492,9 +498,14 @@
       <div class="footer-main-container">
         <div class="footer-container1">
           <div class="footer-logo">
-            <a href="./index.html">
-              <img src="../../assets/icons/logo_footer.png" alt="" />
-            </a>
+            <div class="logo" id="logo-anchor2">
+              <p class="logo-inner2">PetStory online</p>
+              <img
+                class="bamboo-stick"
+                src="../../assets/icons/bamboo.png"
+                alt=""
+              />
+            </div>
           </div>
           <div class="footer-btn">
             <button id="donate-btn" class="watch-btn feed-back-btn">
