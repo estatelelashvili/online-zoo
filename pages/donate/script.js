@@ -4,6 +4,9 @@ document.getElementById('logo-anchor').onclick = function () {
 document.getElementById('logo-anchor2').onclick = function () {
   location.href = '../main/index.html';
 };
+document.getElementById('donate-btn').onclick = function () {
+  location.href = './index.html';
+};
 
 const formElement = document.getElementById('fname');
 
@@ -15,3 +18,5 @@ formElement.addEventListener('input', function () {
     formElement.value = 0;
   }
 });
+
+get;
