@@ -72,7 +72,7 @@ header{
 .bamboo-stick{
     position: absolute;
     top: 43%;
-    left: 9%;
+    left: 15%;
 }
 
 .logo{
@@ -88,8 +88,8 @@ header{
     text-align: center;
     line-height: 120%;
     margin: 5px 0 0 5px;
-    letter-spacing: 0.05em;
-    font-family: "Roboto-200";
+    letter-spacing: 0.02em;
+    font-family: "Roboto-300";
     font-size: 18px;
     width: 73px;
     height: 45px;
@@ -99,8 +99,8 @@ header{
     text-align: center;
     line-height: 120%;
     margin: 5px 0 0 5px;
-    letter-spacing: 0.05em;
-    font-family: "Roboto-200";
+    letter-spacing: 0.02em;
+    font-family: "Roboto-300";
     font-size: 18px;
     width: 73px;
     height: 45px;
@@ -193,6 +193,20 @@ nav ul li a{
 }
 
 
+h1{
+    font-family: "Roboto-200";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 35px;
+    letter-spacing: 0.05rem;
+    text-align: left;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    width: 1160px;
+    margin: auto;
+    margin-top: 0;
+    /* border: 1px solid red; */
+}
 #special-heading{
     font-family: "Roboto-200";
     font-style: normal;
@@ -503,7 +517,7 @@ h4{
     height: 1482px;
     width: 1600px;
     /* margin: auto; */
-    padding: 35px 0 0 0;
+    padding: 42px 0 0 0;
 }
 
 .friends-inner{
@@ -567,7 +581,7 @@ h4{
     height: 94px;
     width: 1160px;
     margin: auto;
-    margin-top: 2px;
+    margin-top: 12px;
     /* letter-spacing: 0.01rem; */
 }
 
@@ -625,12 +639,13 @@ h4{
     background-clip: text;
 }
 .feed-btn-div{
-    width: 300px;
+    width: 310px;
     height: 110px;
     display: flex;
     justify-content: flex-start;
     align-items: center;
     margin: auto;
+    padding: 0 0 0 10px;
 }
 .feed-btn{
     cursor: pointer;
@@ -1054,14 +1069,15 @@ div input{
     width: 268px;
     border-radius: 2px;
   }
-  .clearBtn {
+  .dollar-span {
     background-color: transparent;
     color: #929699;
     position: absolute;
     top: 15px;
-    right: 15px;
+    right: 25px;
     transition: right 0.2s;
     font-family: "Trebuchet-Bold";
+    font-size: 20px;
   }
 
   .two-radio{
@@ -1160,12 +1176,13 @@ div input{
   }
 
   .share{
-    height: 22px;
-    width: 305px;
+    height: 25px;
+    width: 315px;
     margin: auto;
     font: 16px;
     color:#333B41;
     font-family: "Roboto-400";
+    padding: 3px 0 0 10px;
   }
 
  .money-bar-p{
@@ -1251,10 +1268,10 @@ div input{
     visibility: visible;
     color: #FE9013;
   }
-  .button-prop input[type="radio"]:hover + #outer-circle {
+  /* .button-prop input[type="radio"]:hover + #outer-circle {
     visibility: visible;
     color: #FE9013;
-  }
+  } */
 
 
   .button-prop:hover {
@@ -1386,6 +1403,10 @@ div input{
     visibility: visible;
     color: #FE9013;
   }
+  /* .button-prop2 input[type="radio"]:hover + #outer-circle2 {
+    visibility: visible;
+    color: #FE9013;
+  } */
 
 
   .button-prop2:hover {
