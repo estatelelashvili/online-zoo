@@ -45,9 +45,11 @@
 }
 
 body{
-    width: 1600px;
+    /* width: 1600px; */
+    width: 100%;
     margin: auto;
     overflow-x: hidden;
+    background: #000000;
 }
 
 header{
@@ -60,6 +62,8 @@ header{
     font-size: 16px;
     font-weight: 500;
     letter-spacing: 0.0em;
+    width: 1600px;
+    margin: auto;
 }
 
 .logo-div{
@@ -175,6 +179,7 @@ nav ul li a{
 }
 
 .panda-bg{
+    background: black;
     background-image: url('../../assets/images/panda_bg.png');
     background-repeat: no-repeat;
     background-position: center;
@@ -508,7 +513,8 @@ h4{
       );
     height: 1482px;
     width: 1600px;
-    /* margin: auto; */
+    width: 100%;
+    margin: auto;
     padding: 36px 0 0 0;
 }
 
@@ -586,10 +592,12 @@ h4{
     font-family: "Roboto-300";
     font-size: 36px;
     text-align: left;
-    width: 409px;
+    width: 1160px;
     height: 77px;
-    margin: auto;
-    margin: 45px 0 0 220px;
+    /* margin: 45px 0 0 220px; */
+    margin-top: 45px;
+    margin-left: auto;
+    margin-right: auto;
     letter-spacing: 0.006em;
     color: #F9804B;
 }
@@ -819,15 +827,16 @@ footer{
     background-color: #000000;
     width: 100%;
     margin: auto;
-    padding: 40px;
+    padding-top: 40px;
 }
 
 .footer-main-container{
-    height: 443px;
+    /* height: 443px; */
     display: flex;
-    justify-content: center;
-    width: 100%;
+    width: 1600px;
     margin: auto;
+    /* justify-content: center; */
+    /* margin: auto; */
 }
 .tiny-ellipse{
     background: rgba(196, 196, 196, 0.5);

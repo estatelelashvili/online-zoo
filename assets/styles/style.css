@@ -61,46 +61,11 @@ header{
     width: 302px;
     display: flex;
     justify-content: flex-end;
+    
 }
-
-.bamboo-stick{
-    position: absolute;
-    top: 43%;
-    left: 9%;
-}
-
 .logo{
-    width: 82px;
-    height: 52px;
-    border: 1px solid #FFFFFF;
-    border-radius: 2px;
-    position: relative;
-    cursor: pointer;
-}
-
-
-
-.logo-inner{
-    text-align: center;
-    line-height: 120%;
-    margin: 5px 0 0 5px;
-    letter-spacing: 0.05em;
-    font-family: "Roboto-200";
-    font-size: 18px;
-    width: 73px;
-    height: 45px;
-    color:#FFFFFF;
-}
-.logo-inner2{
-    text-align: center;
-    line-height: 120%;
-    margin: 5px 0 0 5px;
-    letter-spacing: 0.05em;
-    font-family: "Roboto-200";
-    font-size: 18px;
-    width: 73px;
-    height: 45px;
-    color:#FFFFFF;
+    max-width: 85px;
+    max-height: 85px;
 }
 .single{
     /* flex: 1; */
@@ -187,7 +152,7 @@ nav ul li a{
 }
 
 
-.main-title{
+h1{
     margin: 74px 0 0 72px;
     font-family: "Roboto-700";
     font-style: normal;
@@ -421,7 +386,6 @@ h4{
     width: 368px;
     border-radius: 5px;
     position: relative;
-    cursor: pointer;
 }
 
 .grid-card img{
@@ -434,14 +398,9 @@ h4{
 	filter: brightness(100%);
 }
 .grass{
-    margin: 5px 0 0 10px;
+    margin-top: 5px;
     height: 37px;
     width: 33px;
-}
-.meat{
-    margin-top: 4px;
-    height: 38px;
-    width: 48px;
 }
 
 .catalog-legend{
@@ -451,19 +410,19 @@ h4{
 }
 
 .catalog-legend-inner{
-    width: 312px;
+    width: 322px;
     padding: 6px 0 0 18px;
 }
 
 .catalog-legend-inner h6{
     font-family: "Roboto-500";
     font-size: 16px;
-    width: 312px;
+    width: 322px;
 }
 .catalog-legend-inner p{
     font-family: "Roboto-300";
     font-size: 15px;
-    width: 312px;
+    width: 322px;
 }
 
 .btn-catalog{
@@ -477,28 +436,8 @@ h4{
 }
 
 .friend{
-    background-image: linear-gradient(
-        315.75deg,
-        rgba(254, 210, 144, 0.7) 30.06%,
-        #febdab 100.95%,
-        rgba(254, 210, 144, 0.7) 106.36%
-      ),
-      linear-gradient(
-        315.75deg,
-        rgba(254, 189, 171, 0.74) 30.06%,
-        rgba(243, 169, 248, 0.66) 50.74%,
-        #e0d8f0 80.49%,
-        #eaf7fe 127.9%,
-        #eaf7fe 149.54%
-      ),
-      linear-gradient(
-        315.75deg,
-        rgba(254, 189, 171, 0.74) 30.06%,
-        rgba(243, 169, 248, 0.66) 50.74%,
-        #e0d8f0 80.49%,
-        #eaf7fe 127.9%,
-        #eaf7fe 149.54%
-      );
+    background: linear-gradient(315.75deg, rgba(254, 210, 144, 0.7) 30.06%, #FEBDAB 100.95%, rgba(254, 210, 144, 0.7) 106.36%);
+    opacity: 0.9;
     height: 1002px;
     width: 1600px;
     margin: auto;
@@ -512,7 +451,7 @@ h4{
     background: rgba(253, 253, 255, 0.52);
     backdrop-filter: blur(2px);
     border-radius: 20px;
-    /* opacity: 0.8; */
+    opacity: 0.8;
     padding: 30px;
 }
 
@@ -532,11 +471,10 @@ h4{
     width: 844px;
     height: 29px;
     margin: 35px 0 0 70px;
-    color: #333B41;
-    /* background:  linear-gradient(#FEBDAB 100% , #FED290 70%);
+    background:  linear-gradient(#FEBDAB 100% , #FED290 70%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    background-clip: text; */
+    background-clip: text;
 }
 
 .covid{
@@ -546,7 +484,10 @@ h4{
     width: 100%;
     margin: 38px 0 0 21px;
     letter-spacing: 0.006em;
-    color: #333B41
+    background:  linear-gradient(#FEBDAB 100% , #FED290 70%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
 
 .even{
@@ -558,11 +499,13 @@ h4{
     line-height: 130%;
     margin: 12px 0 0 68px;
     letter-spacing: 0;
-    color: #333B41;
+    background:  linear-gradient(#FEBDAB 100% , #FED290 70%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
 
 .undeline{
-    color: #333B41;
     text-decoration: underline #F9804B;
     text-underline-offset: 5px;
     cursor: pointer;
@@ -576,7 +519,10 @@ h4{
     margin: auto;
     margin-top: 62px;
     letter-spacing: 0.006em;
-    color: #333B41;
+    background:  linear-gradient(#FEBDAB 100% , #FED290 70%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
 
 
@@ -610,7 +556,10 @@ h4{
     line-height: 22px;
     height: 46px;
     width: 168px;
-    color: #333B41;
+    background:  linear-gradient(#FEBDAB 100% , #FED290 70%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
 .feed-btn-div{
     width: 100%;
@@ -742,22 +691,17 @@ h4{
     margin: 21px 0 0 50px;
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
-    border: 1px solid #FE9013;
+    border: 1px solid orange;
      width: 113px; 
      height: 7px;
      display: block;
-     background-color: #FE9013;
-}
-
-.gauge-btn:hover{
-    background-color: #F9804B;   
-    border: 1px solid #F9804B;
+     background-color: orange;
 }
 .gauge-btn2{
     margin: 21px 0 0 0;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
-    border: 1px solid #FE9013;
+    border: 1px solid orange;
      width: 486px; 
      height: 7px;
      display: block;
@@ -769,7 +713,6 @@ h4{
     margin: auto;
     width: 700px;
     height: 50px;
-    cursor: pointer;
 }
 
 
