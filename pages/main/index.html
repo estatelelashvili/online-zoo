@@ -6,34 +6,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../../assets/styles/normalize.css" />
     <link rel="stylesheet" href="./style.css" />
-    <title>Document</title>
+    <link rel="stylesheet" href="./mobile.css" />
+    <title>Bad 2px margin</title>
   </head>
   <body>
     <header>
       <div class="header-cont">
-
-      
-      <div class="logo-div">
-        <div class="logo" id="logo-anchor">
-          <h1 class="logo-inner">
-            PetStory online
-          </h1>
-          <img class="bamboo-stick" src="../../assets/icons/bamboo.png" alt="">
+        <div class="logo-div">
+          <div class="logo" id="logo-anchor">
+            <h1 class="logo-inner">PetStory online</h1>
+            <img
+              class="bamboo-stick"
+              src="../../assets/icons/bamboo.png"
+              alt=""
+            />
+          </div>
+        </div>
+        <nav>
+          <div class="burger-menu">
+            <p></p>
+            <p></p>
+            <p></p>
+          </div>
+          <ul>
+            <li><a href="" class="highlighted">About</a></li>
+            <li><a href="">Map</a></li>
+            <li><a href="">Zoos</a></li>
+            <li><a href="../donate/index.html">Donate</a></li>
+            <li><a href="">Contact us</a></li>
+          </ul>
+        </nav>
+        <div class="single">
+          <a
+            class="single-p"
+            href="https://www.figma.com/file/ypzT9idgAILaSRVRmDAJxn/online-zoo-3-weeks"
+            >Designed by <span>&copy</span></a
+          >
         </div>
       </div>
-      <nav>
-        <ul>
-          <li><a href="" class="highlighted">About</a></li>
-          <li><a href="">Map</a></li>
-          <li><a href="">Zoos</a></li>
-          <li><a href="../donate/index.html">Donate</a></li>
-          <li><a href="">Contact us</a></li>
-        </ul>
-      </nav>
-      <div class="single">
-        <a class="single-p" href="https://www.figma.com/file/ypzT9idgAILaSRVRmDAJxn/online-zoo-3-weeks">Designed by <span>&copy</span></a>
-      </div>
-    </div>
     </header>
     <main>
       <section class="panda-section">
@@ -84,11 +94,10 @@
         </div>
       </section>
       <section>
-        
         <div class="catalog-container">
-          <!-- <div class="gvimra"> -->
           <img class="gvimra" src="../../assets/images/palm.png" alt="" />
-          <!-- </div> -->
+          <div class="gvimra-alt-div"></div>
+
           <div class="catalog-outer">
             <div class="catalog-inner">
               <div class="arrow-left">
@@ -97,10 +106,84 @@
                 </button>
               </div>
               <div class="catalog-grid-outer">
+                <div class="catalog-grid-alter-mobile">
+                  <div class="grid-card">
+                    <img
+                      src="../../assets/images/two-pandas-mobile.png"
+                      alt="img1-mobile"
+                    />
+                    <div class="overlay"></div>
+                    <div class="catalog-legend">
+                      <div class="catalog-legend-inner">
+                        <h6>giant pandas</h6>
+                        <p>Native to Southwest China</p>
+                      </div>
+                      <img
+                        class="grass"
+                        src="../../assets/icons/banana-bamboo_icon.png"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                  <div class="grid-card">
+                    <img
+                      src="../../assets/images/eagle-mobile.png"
+                      alt="img1-mobile"
+                    />
+                    <div class="overlay"></div>
+                    <div class="catalog-legend">
+                      <div class="catalog-legend-inner">
+                        <h6>eagles</h6>
+                        <p>Native to South America</p>
+                      </div>
+                      <img
+                        class="meat"
+                        src="../../assets/icons/meet-fish_icon.png"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                  <div class="grid-card">
+                    <img
+                      src="../../assets/images/gorilla-mobile.png"
+                      alt="img1-mobile"
+                    />
+                    <div class="overlay"></div>
+                    <div class="catalog-legend">
+                      <div class="catalog-legend-inner">
+                        <h6>gorillas</h6>
+                        <p>Native to Congo</p>
+                      </div>
+                      <img
+                        class="grass"
+                        src="../../assets/icons/banana-bamboo_icon.png"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                  <div class="grid-card">
+                    <img
+                      src="../../assets/images/alligator-mobile.png"
+                      alt="img1-mobile"
+                    />
+                    <div class="overlay"></div>
+                    <div class="catalog-legend">
+                      <div class="catalog-legend-inner">
+                        <h6>alligators</h6>
+                        <p>Native to Southeastern United States</p>
+                      </div>
+                      <img
+                        class="meat"
+                        src="../../assets/icons/meet-fish_icon.png"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
                 <div class="catalog-grid">
                   <div class="grid-card">
                     <img src="../../assets/images/pandas.png" alt="img1" />
-                    <div class='overlay'></div>
+                    <div class="overlay"></div>
                     <div class="catalog-legend">
                       <div class="catalog-legend-inner">
                         <h6>giant pandas</h6>
@@ -193,13 +276,12 @@
             </div>
             <button class="watch-btn btn-catalog">choose your favorite</button>
           </div>
-          <!-- <div class="dragon-flower"> -->
           <img
             class="dragon-flower"
             src="../../assets/images/strelitzia.png"
             alt=""
           />
-          <!-- </div> -->
+          <div class="dragon-flower-alt-div"></div>
         </div>
       </section>
       <section>
@@ -218,7 +300,9 @@
             <p class="even">
               Even though the zoo has reopened, we need you now more than ever
               to help us deal with these problems. Please consider a gift to our
-              <a class="undeline" href="../donate/index.html">Emergency Support Fund</a>.
+              <a class="undeline" href="../donate/index.html"
+                >Emergency Support Fund</a
+              >.
             </p>
             <h3 class="how">How it works</h3>
             <div class="trio">
@@ -231,6 +315,9 @@
               <div class="trio-vector">
                 <img src="../../assets/icons/Vector.png" alt="" />
               </div>
+              <div class="trio-vector-alt-mobile1">
+                <img src="../../assets/icons/green-arrow.png" alt="" />
+              </div>
               <div class="trio-card-outer">
                 <div class="trio-card">
                   <img src="../../assets/icons/zoo.png" alt="" />
@@ -239,6 +326,9 @@
               </div>
               <div class="trio-vector">
                 <img src="../../assets/icons/Vector.png" alt="" />
+              </div>
+              <div class="trio-vector-alt-mobile2">
+                <img src="../../assets/icons/green-arrow.png" alt="" />
               </div>
               <div class="trio-card-outer">
                 <div class="trio-card">
@@ -257,7 +347,7 @@
         <div class="testimonials-main-container">
           <h3 class="testimonial-title">testimonials</h3>
           <div class="testimonials-container">
-            <div class="testimonials-item">
+            <div class="testimonials-item michael">
               <div class="testimonials-item-container">
                 <img src="../../assets/icons/unknownuser.png" alt="" />
                 <div class="outer-subtitle">
@@ -280,7 +370,7 @@
                 instill a love for animals.
               </p>
             </div>
-            <div class="testimonials-item">
+            <div class="testimonials-item oldguy">
               <div class="testimonials-item-container">
                 <img src="../../assets/icons/guy.png" alt="" />
                 <div class="outer-subtitle">
@@ -297,7 +387,7 @@ The best online zoo I’ve met. My son delighted very much ljves to watch gouill
 
               </p>
             </div>
-            <div class="testimonials-item">
+            <div class="testimonials-item fredericka">
               <div class="testimonials-item-container">
                 <img src="../../assets/icons/girl1.png" alt="" />
                 <div class="outer-subtitle">
@@ -314,7 +404,7 @@ The best online zoo I’ve met. My son delighted very much ljves to watch gouill
                 
               </p>
             </div>
-            <div class="testimonials-item">
+            <div class="testimonials-item mila">
               <div class="testimonials-item-container">
                 <img src="../../assets/icons/girl2.png" alt="" />
                 <div class="outer-subtitle">
@@ -341,74 +431,93 @@ The best online zoo I’ve met. My son delighted very much ljves to watch gouill
             <div class="leaf">
               <img src="../../assets/images/leav_foto.png" alt="" />
             </div>
+            <div class="leaf-mobile">
+              <img src="../../assets/icons/leav_foto-mobile.png" alt="" />
+            </div>
           </div>
         </div>
       </section>
     </main>
-    <footer>
+  <footer>
       <div class="footer-main-container">
-      <div class="footer-container1">
-        <div class="footer-logo">
-          <div class="logo" id="logo-anchor2">
-            <p class="logo-inner2">
-              PetStory online
-            </p>
-            <img class="bamboo-stick" src="../../assets/icons/bamboo.png" alt="">
-          </div>
-        </div>
-        <div class="footer-btn">
-          <button id='donate-btn' class="watch-btn feed-back-btn">Donate for volunteers</button>
-        </div>
-        <div class="social-media-outer">
-          <div class="social-media">
-            <div class="social-media-item">
-              <button class="tiny-ellipse">
-                <a class="social-media-anchor" href=""> <img src="../../assets/icons/facebook.png" alt="" /></a>
-              </button>
-              <a class="social-media-anchor-add" href="">Facebook</a> 
-            </div>
-            <div class="social-media-item">
-              <button class="tiny-ellipse">
-                <a class="social-media-anchor" href=""> <img src="../../assets/icons/tweeter.png" alt="" /></a>
-              </button><a class="social-media-anchor-add" href="">Twitter</a> 
-            </div>
-            <div class="social-media-item">
-              <button class="tiny-ellipse">
-                <a class="social-media-anchor" href=""><img src="../../assets/icons/instagram.png" alt="" /></a>
-              </button><a class="social-media-anchor-add" href="">Instagram</a>
-          </div>
-          <div class="social-media-item">
-            <button class="tiny-ellipse">
-              <a class="social-media-anchor" href=""><img src="../../assets/icons/youtube.png" alt="" /></a>
-            </button><a class="social-media-anchor-add" href="">YouTube</a>
+        <div class="footer-container1">
+          <div class="footer-logo">
+            <div class="logo" id="logo-anchor2">
+              <p class="logo-inner2">PetStory online</p>
+              <img
+                class="bamboo-stick"
+                src="../../assets/icons/bamboo.png"
+                alt=""
+              />
             </div>
           </div>
+          <div class="footer-btn">
+            <button id="donate-btn" class="watch-btn feed-back-btn">
+              Donate for volunteers
+            </button>
+          </div> 
+       <div class="social-media-outer">
+            <div class="social-media">
+              <div class="social-media-item">
+                <button class="tiny-ellipse">
+                  <a class="social-media-anchor" href="">
+                    <img src="../../assets/icons/facebook.png" alt=""
+                  /></a>
+                </button>
+                <a class="social-media-anchor-add" href="">Facebook</a>
+              </div>
+              <div class="social-media-item">
+                <button class="tiny-ellipse">
+                  <a class="social-media-anchor" href="">
+                    <img src="../../assets/icons/tweeter.png" alt=""
+                  /></a></button
+                ><a class="social-media-anchor-add" href="">Twitter</a>
+              </div>
+              <div class="social-media-item">
+                <button class="tiny-ellipse">
+                  <a class="social-media-anchor" href=""
+                    ><img src="../../assets/icons/instagram.png" alt=""
+                  /></a></button
+                ><a class="social-media-anchor-add" href="">Instagram</a>
+              </div>
+              <div class="social-media-item">
+                <button class="tiny-ellipse">
+                  <a class="social-media-anchor" href=""
+                    ><img src="../../assets/icons/youtube.png" alt=""
+                  /></a></button
+                ><a class="social-media-anchor-add" href="">YouTube</a>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
       <div class="footer-container2">
           <nav>
             <ul>
-              <li><a href="" style="color: #F9804B">About</a></li>
+              <li><a href="" style="color: #f9804b">About</a></li>
               <li><a href="">Map</a></li>
               <li><a href="">Zoos</a></li>
               <li><a href="">Contact us</a></li>
             </ul>
           </nav>
-      </div>
-      <div class="footer-container3">
-        <div class="search-bar">
-          <h4>Subscribe to our news</h4>
-          <input type="email" placeholder="Enter your email" />
-          <button>Submit</button>
         </div>
-        <div class="author">
-         <a href="https://www.figma.com/file/ypzT9idgAILaSRVRmDAJxn/online-zoo-3-weeks">Designed by Alisa Samborskaya</a> 
-         <a href="https://rs.school/" class="copyR">©RSSchool & ©Yem Digital 2021</a>
-          <!-- <p class="copyR">©RSSchool & ©Yem Digital 2021</p> -->
+        <div class="footer-container3">
+          <div class="search-bar">
+            <h4>Subscribe to our news</h4>
+            <input type="email" placeholder="Enter your email" />
+            <button>Submit</button>
+          </div>
+          <div class="author">
+            <a
+              href="https://www.figma.com/file/ypzT9idgAILaSRVRmDAJxn/online-zoo-3-weeks"
+              >Designed by Alisa Samborskaya</a
+            >
+            <a href="https://rs.school/" class="copyR"
+              >©RSSchool & ©Yem Digital 2021</a
+            >
+          </div>
         </div>
       </div>
-    </div>
-    </footer>
+    </footer> 
     <script src="./script.js"></script>
   </body>
 </html>
