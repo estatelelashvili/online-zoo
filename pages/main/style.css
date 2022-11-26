@@ -121,7 +121,6 @@ header{
     justify-content: flex-end;
     color: white;
     /* border: 1px solid white; */
-    
 }
 .single-p{
     cursor: pointer;
@@ -481,6 +480,9 @@ h4{
     width: 320px;
     display: flex;
     flex-direction: column;
+    display: none;
+}
+.catalog-grid-alter-small{
     display: none;
 }
 
@@ -886,6 +888,12 @@ h4{
 .leaf-tablet{
     z-index: -1;
     width: 640px;
+    display: none;
+}
+
+.leaf-small{
+    z-index: -1;
+    width: 1000px;
     display: none;
 }
 
