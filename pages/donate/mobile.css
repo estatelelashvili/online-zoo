@@ -1,64 +1,21 @@
-@font-face {
-	font-family: "Roboto-200";
-	src: url('../../assets/fonts/Roboto-Thin.ttf');
-	font-weight: normal;
-	font-style: normal;
-}
-@font-face {
-	font-family: "Roboto-300";
-	src: url('../../assets/fonts/Roboto-Light.ttf');
-	font-weight: normal;
-	font-style: normal;
-}
-@font-face {
-	font-family: "Roboto-400";
-	src: url('../../assets/fonts/Roboto-Medium.ttf');
-	font-weight: normal;
-	font-style: normal;
-}
+@media(max-width: 320px) {
 
-@font-face {
-	font-family: "Roboto-500";
-	src: url('../../assets/fonts/Roboto-Regular.ttf');
-	font-weight: normal;
-	font-style: normal;
-}
-
-@font-face {
-	font-family: "Roboto-700";
-	src: url('../../assets/fonts/Roboto-Bold.ttf');
-	font-weight: normal;
-	font-style: normal;
-}
-@font-face {
-	font-family: "Trebuchet-Bold";
-	src: url('../../assets/fonts/TREBUCBD.ttf');
-	font-weight: normal;
-	font-style: normal;
-}
-
-
-*{
-	margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body{
-    /* width: 1600px; */
-    width: 100%;
+html, body{
+    width: 320px;
     margin: auto;
     overflow-x: hidden;
-    background: #000000;
+    /* background: #000000; */
+    background-color: #FFFFFF;
+    overflow-x: hidden;
 }
 
 header{
-    height: 80px;
+    height: 34px;
     background: #000000;
     width: 100%;
     display: flex;
     align-items: center;
-        font-family: "Roboto-500";
+    font-family: "Roboto-500";
     font-size: 16px;
     font-weight: 500;
     letter-spacing: 0.0em;
@@ -67,23 +24,21 @@ header{
 }
 
 .logo-div{
-    /* flex: 0.91; */
-    width: 302px;
+    width: 100px;
+    height: 34px;
     display: flex;
-    justify-content: flex-end;
-}
-
-.bamboo-stick{
-    position: absolute;
-    top: 43%;
-    left: 12%;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0 0 0 10px;
 }
 
 .logo{
-    width: 82px;
-    height: 52px;
-    border: 1px solid #FFFFFF;
-    border-radius: 2px;
+    height: 30px;
+    width: 47px;
+    font-size: 12px;
+    line-height: 15px;
+    border: none;
+    border-radius: 0;
     position: relative;
     cursor: pointer;
 }
@@ -91,25 +46,28 @@ header{
 .logo-inner{
     text-align: center;
     line-height: 120%;
-    margin: 5px 0 0 5px;
-    letter-spacing: 0.04em;
+    letter-spacing: 0.05em;
     font-family: "Roboto-200";
-    font-size: 18px;
-    width: 73px;
-    height: 45px;
+    font-size: 12px;
+    height: 30px;
+    width: 47px;
     color:#FFFFFF;
+    margin: 0;
 }
-.logo-inner2{
-    text-align: center;
-    line-height: 120%;
-    margin: 5px 0 0 5px;
-    letter-spacing: 0.02em;
-    font-family: "Roboto-300";
-    font-size: 18px;
-    width: 73px;
-    height: 45px;
-    color:#FFFFFF;
+
+.bamboo-stick{
+    height: 15px;
+    width: 5px;
+    position: absolute;
+    top: 43%;
+    left: 10%;
+    transform: rotate(-15deg);
 }
+
+
+
+
+
 
 
 .single{
@@ -137,24 +95,16 @@ header{
 nav ul li a:hover{
     color: #F9804B;
 }
+
 nav{
-    padding-left: 63px;
-    /* border: 1px solid white; */
-    width: 535px;
-    /* flex: 2.9; */
-    background-color: #000000;
-    height: 80px;
-    color: #FFFFFF;
-    z-index: 7;
-    display: flex;
-    justify-content: flex-end;
+    height: 34px;
+    margin: 0 0 0 135px;
+    width: 40px;
 }
 
 nav:hover{
     cursor: pointer;
-    border: 2px solid #251e1e;
-    border-radius: 20px;
-    height: 50px;
+    height: 34px;
 }
 
 ul{
@@ -179,24 +129,18 @@ nav ul li a{
 }
 
 .burger-menu{
-    width: 18px;
-    height: 10px;
-    display: none;
-}
-.burger-menu p{
-    width: 18px;
-    height: 2px;
-    background: white;
-    margin-bottom: 2px;
+    display: block;
+    margin: 0 10px 0 0;
+    margin: auto;
 }
 
 .panda-bg{
-    background: black;
-    background-image: url('../../assets/images/panda_bg.png');
+    width: 320px;
+    margin: auto;
+    background-image: url('../../assets/images/panda_bg-donate-mobile.png');
     background-repeat: no-repeat;
     background-position: center;
-    background-position-y: -4px;
-    height: 386px;
+    height: 187px;
 }
 
 .ellipse-container{
@@ -220,12 +164,14 @@ nav ul li a{
     font-family: "Roboto-200";
     font-style: normal;
     font-weight: 700;
-    font-size: 35px;
-    letter-spacing: 0.05rem;
+    font-size: 22px;
+    line-height: 29px;
+    letter-spacing: 0.08rem;
     text-align: left;
     text-transform: uppercase;
     color: #FFFFFF;
-    width: 1160px;
+    width: 300px;
+    height: 87px;
     margin: auto;
     margin-top: 0;
     /* border: 1px solid red; */
@@ -527,48 +473,42 @@ h4{
         #eaf7fe 127.9%,
         #eaf7fe 149.54%
       );
-    height: 1482px;
-    width: 1600px;
+    height: 1147px;
     width: 100%;
+    width: 320px;
     margin: auto;
-    padding: 36px 0 0 0;
+    padding: 30px 0 0 0;
 }
 
 .friends-inner{
     margin: auto;
     margin-top: 28px;
-    height: 964px;
-    width: 1160px;
+    height: 591px;
+    width: 300px;
     background: rgba(253, 253, 255, 0.52);
     backdrop-filter: blur(2px);
     border-radius: 20px;
-    /* opacity: 0.8; */
-    padding: 30px;
-    /* border: 2px solid red; */
+    padding: 0;
 }
 
 .pick{
-    display: flex;
-    align-items: flex-start;
     color:#FE9013;
     text-align: center;
-    width: 478px;
-    height: 58px;
+    width: 242px;
+    height: 50px;
     margin: auto;
-    margin-top: 8px;
-
+    font-size: 24px;
+    padding: 4px 0 0 5px;
 }
 
 .know{
-    height: 29px;
-    width: 1095px;
-    font-size: 24px;
+    height: 44px;
+    width: 300px;
+    font-size: 16px;
     letter-spacing: 0.006em;
-    width: 975px;
-    height: 29px;
-    text-align: left;
+    text-align: center;
     margin: auto;
-    margin-top: 25px;
+    margin-top: 9px;
     color:#333B41;
 }
 
@@ -588,15 +528,13 @@ h4{
 .even{
     font-family: "Roboto-500";
     font-size: 16px;
-    /* text-align: center; */
-    line-height: 23px;
+    line-height: 22px;
     letter-spacing: 0.0045rem;
     color: #FFFFFF;
-    height: 94px;
-    width: 1160px;
+    height: 308px;
+    width: 300px;
     margin: auto;
-    margin-top: 1px;
-    /* letter-spacing: 0.01rem; */
+    margin-top: 20px;
 }
 
 .undeline{
@@ -606,16 +544,15 @@ h4{
 }
 .donate-info{
     font-family: "Roboto-300";
-    font-size: 36px;
+    font-size: 24px;
     text-align: left;
-    width: 1160px;
-    height: 77px;
+    width: 227px;
+    height: 29px;
     /* margin: 45px 0 0 220px; */
-    margin-top: 45px;
-    margin-left: auto;
-    margin-right: auto;
+    margin-top: 32px;
+    margin-left: 10px;
     letter-spacing: 0.006em;
-    color: #F9804B;
+    color:  #FE9013;
 }
 
 
@@ -655,13 +592,13 @@ h4{
     background-clip: text;
 }
 .feed-btn-div{
-    width: 310px;
-    height: 110px;
+    width: 300px;
+    height: 105px;
     display: flex;
     justify-content: flex-start;
     align-items: center;
     margin: auto;
-    padding: 0 0 0 10px;
+    padding: 0;
     cursor: pointer;
 }
 .feed-btn{
@@ -838,22 +775,67 @@ h4{
     z-index: -1;
 }
 
+/* FOOTER */
+
 footer{
-    height: 443px;
-    background-color: #000000;
-    width: 100%;
-    margin: auto;
-    padding-top: 40px;
+    width: 320px;
+    height: 334px;
+    margin-top: 0;
+    padding: 0;
 }
 
 .footer-main-container{
-    /* height: 443px; */
     display: flex;
-    width: 1600px;
-    margin: auto;
-    /* justify-content: center; */
-    /* margin: auto; */
+    flex-direction: column;
+    justify-content: center;
+    width: 320px;
+    margin: auto;  
 }
+.footer-logo{
+    order: 1;
+    width: 200px;
+    height: 33px;
+    margin: 10px 0 0 0;
+}
+#logo-anchor2{
+    width: 180px;
+    margin: auto;
+    height: 33px;
+    border: 1px solid black;
+}
+
+.logo-inner2{
+    padding-top: 10px;
+    width: 160px;
+    height: 33px;
+    font-family: "Roboto-300";
+    margin: 0 0 0 0;
+    margin-left: auto;
+    margin-right: auto;
+    letter-spacing: 0.035em;
+    
+}
+
+#logo-anchor2 img{
+    position: absolute;
+    top: 32%;
+    left: 57%;
+}
+
+.social-media{
+    display: flex;
+    justify-content: space-between;
+    width: 198px;
+    margin: auto;
+}
+
+.social-media-outer{
+    width: 320px;
+    margin: auto;
+    order: 2;
+    margin-top: 21px;
+}
+
 .tiny-ellipse{
     background: rgba(196, 196, 196, 0.5);
     min-width: 30px;
@@ -861,6 +843,68 @@ footer{
     max-width: 30px;
     max-height: 30px;
     border-radius: 50%;
+    border: 2px solid black;
+}
+
+.footer-container1{
+    width: 320px;
+    margin: auto;
+}
+
+.footer-container2{
+    width: 320px;
+    display: block;
+    height: 50px;
+    order: 5;
+    margin-top: 11px;
+}
+
+.footer-container2 nav{
+    display: inline;
+    margin: 0;
+    height: 50px;
+    width: 300px;
+}
+.footer-container2 nav ul{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 0;
+    width: 280px;
+    margin: auto;
+}
+.footer-container2 nav ul li {
+    margin-left: 0;
+    display: block;
+}
+.footer-container2 nav ul li a{
+    display: block;
+}
+
+.footer-btn{
+    order: 3;
+    display: block;
+    margin: auto;
+    margin-top: 27px;
+    height: 60px;
+}
+
+.donate-btn{
+    margin: auto;
+    width: 298px;
+}
+
+.footer-container3{
+    width: 300px;
+}
+
+.author{
+    order: 4;
+    color: #FFFFFF;
+    margin: 25px 0 0 94px;
+}
+.author a, .author p {
+    font-size: 15px;
+    width: 220px;
 }
 
 .social-media-anchor-add:hover{
@@ -918,19 +962,7 @@ div input{
     margin-right: 5px;
 }
 
-.author{
-    color: #FFFFFF;
-    margin: 202px 0 0 172px;
-}
-.author a, .author p {
-    font-family: "Roboto-200";
-    font-size: 16px;
-    height: 21px;
-    width: 250px;
-    line-height: 130%;
-    color: #FFFFFF;
-    text-decoration: none;
-}
+
 
 .author a:hover{
     color:#F9804B;
@@ -940,14 +972,8 @@ div input{
     display: block;
     margin: 10px 0 0 0;
 }
-.social-media-outer{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-}
-.social-media{
-    width: 302px;
-}
+
+
 
 .social-media-item{
     display: flex;
@@ -975,70 +1001,16 @@ div input{
     color: #FFFFFF;
 }
 
-.footer-container1{
-    width: 515px;
-    display: flex;
-    flex-direction: column;
-    /* justify-content: space-around; */
-    height:90%;
-    /* border: 1px solid yellowgreen; */
-}
-
-.footer-logo{
-    width: 120px;
-   
-    align-self: center;
-    display: flex;
-    justify-content: flex-start;
-}
-.footer-btn{
-    margin: 68px 0 0 0;
-    height: 90px;
-    width: 300px;
-    align-self: flex-end;
-}
-.footer-btn button{
-    width: 300px;
-}
-.footer-container2{
-    width: 469px;
-    display: flex;
-    flex-direction: column;
-    height:90%;
-}
-.footer-container3{
-    width: 617px;
-    display: flex;
-    flex-direction: column;
-    height:90%;
-}
-
-.footer-container2 nav{
-    margin: 317px 0 0 35px;
-    height: 50px;
-    width: 430px;
-}
-
-.footer-container2 nav ul li a{
-    text-decoration: none;
-    color: #FFFFFF;
-    font-family: "Roboto-300";
-    font-size: 16px;
-    cursor: pointer;
-}
-
 .footer-container2 nav ul li a:hover{
     color: #F9804B;
 }
 
 /* DONATE */
 
-.money-bar{
-    margin: 50px 0 0 0;
-}
+
 .panda-meal{
-    width: 550px;
-    height: 300px;
+    width: 300px;
+    height: 156px;
     margin: auto;
     display: flex;
     justify-content: space-evenly;
@@ -1046,7 +1018,7 @@ div input{
 }
 
 .panda-diet{
-    height: 200px;
+    height: 85px;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -1055,35 +1027,77 @@ div input{
 
 .panda-diet h6{
     font-family: "Roboto-500";
-    font-size: 72px;
+    font-size: 40px;
 }
 
 .panda-diet p{
     font-family: "Roboto-400";
-    font-size: 16px;
+    font-size: 9px;
 }
 
 .multi{
-    height: 14px;
-    width: 14px;
+    height: 8px;
+    width: 8px;
 }
 
 .multi-container{
-    width: 70px;
-    height: 100px;
+    width: 22px;
+    height: 30px;
     display: flex;
+    justify-content: center;
     align-items: flex-end;
 }
 
 .panda-img-container{
-    align-self: flex-end;
-    width: 300px;
-    height: 242px;
+    display: flex;
+    justify-content: flex-end;
+    width: 187px;
+    height: 145px;
+}
+.panda-img{
+    width: 158px;
+    height: 140px;
+}
+
+.money-bar{
+    margin: 0;
+    /* border: 1px solid red; */
+}
+
+.money-bar-p{
+    margin: 0;
+    font-family: "Roboto-400";
+    font-size: 16px;
+} 
+
+/* TRANSFER CSS MONEY */
+
+.dollar-sign{
+    visibility: visible;
+    position: absolute;
+    top: 19px;
+    left: -7px;
+    width: 72px;
+    height: 36px;
+    font-family: inherit;
+    display: flex;
+}
+.dollar-sign span{
+    font-family: 'Trebuchet-Bold';
+    font-size: 10px;
+    margin: 3px 0 0 0;
+}
+
+.donate-amount-p{
+    width: 22px;
+    height: 18px;
+    font-family: inherit;
+    font-size: 13px;
 }
 
 .another-amount-container{
     margin: auto;
-    margin-top: 100px;
+    margin-top: 50px;
     width: 268px;
     height: 54px;
 }
@@ -1098,16 +1112,17 @@ div input{
     color: #929699;
     background-color: transparent;
     border: 1px solid #929699;
-    height: 54px;
-    width: 268px;
+    height: 42px;
+    width: 180px;
     border-radius: 2px;
+    margin-left: 44px;
   }
   .dollar-span {
     background-color: transparent;
     color: #929699;
     position: absolute;
-    top: 15px;
-    right: 25px;
+    top: 9px;
+    right: 14px;
     transition: right 0.2s;
     font-family: "Trebuchet-Bold";
     font-size: 21px;
@@ -1209,45 +1224,19 @@ div input{
   }
 
   .share{
-    height: 25px;
-    width: 315px;
-    margin: auto;
-    font: 16px;
+    margin-top: 6px;
+    height: 21px;
+    width: 300px;
+    /* margin: auto; */
+    font-size: 15px;
+    letter-spacing: 0.02rem;
+    padding: 0;
     color:#333B41;
     font-family: "Roboto-400";
-    padding: 3px 0 0 10px;
+    /* padding: 3px 0 0 10px; */
   }
 
- .money-bar-p{
-    margin: 0 0 0 66px;
-    font-family: "Roboto-400";
-    font-size: 16px;
-} 
 
-/* TRANSFER CSS MONEY */
-
-.dollar-sign{
-    visibility: visible;
-    position: absolute;
-    top: 38px;
-    left: -20px;
-    width: 72px;
-    height: 36px;
-    font-family: inherit;
-    display: flex;
-}
-.dollar-sign span{
-    font-family: 'Trebuchet-Bold';
-    font-size: 20px;
-    margin: 5px 0 0 0;
-}
-
-.donate-amount-p{
-    width: 60px;
-    height: 36px;
-    font-family: inherit;
-    font-size: 26px;
-}
 
 .line-container-inner{
     /* margin-top: -14px; */
@@ -1258,19 +1247,18 @@ div input{
     flex-direction: column; */
   }
 .line{
-    height: 3px;
-    width: 915px;
+    height: 2px;
+    width: 266px;
     /* margin-top: 29px; */
-    margin: 11px 0 0 25px;
+    margin: 5px 0 0 17px;
     background-color:#72828E;
     /* margin: auto; */
   }
   .line-container{
-    /* margin: 29px 0 0 120px; */
-    margin: 18px 0 0 62px;
+    margin: 8px 0 0 0;
     position: relative;
-    height: 27px;
-    width: 976px;
+    height: 14px;
+    width: 300px;
     border: 1px solid #404950;
     background-color: #404950;
   }
@@ -1279,8 +1267,8 @@ div input{
     position: absolute;
     top: -2px;
     left: 0;
-    margin-left: 25px;
-    width: 920px;
+    margin-left: 16px;
+    width: 266px;
     height: 100px;
     /* height: 600px; */
     /* width: fit-content; */
@@ -1292,24 +1280,26 @@ div input{
   .button-prop {
     position: relative;
     /* margin: 10px 0 0 120px; */
-    margin: 10px 0 0 0;
-    height: 10px;
-    width: 10px;
+    margin: 6px 0 0 0;
+    height: 5px;
+    width: 5px;
     background-color: yellow;
+    /* background-color: red; */
     border-radius: 50%;
+    /* border: 1px solid red; */
   }
   
   .button-prop input {
     position: absolute;
-    top: -20px;
-    left: -30px;
+    top: -10px;
+    left: -20px;
     right: 0;
     bottom: 0;
     background-color: red;
     border-radius: 10px;
     outline: 2px solid pink;
-    width: 80px;
-    height: 88px;
+    width: 40px;
+    height: 50px;
   }
 
   
@@ -1361,11 +1351,11 @@ div input{
     position: absolute;
     background: transparent;
     border-radius: 50%;
-    height: 36px;
-    width: 36px;
+    height: 18px;
+    width: 18px;
     top: 50%;
     left: 50%;
-    margin: -18px 0px 0px -18px;
+    margin: -14px 0px 0px -14px;
     outline: 2px solid #F9804B;
   }
 
@@ -1373,8 +1363,8 @@ div input{
     position: absolute;
     background: transparent;
     border-radius: 50%;
-    height: 20px;
-    width: 20px;
+    height: 10px;
+    width: 10px;
     top: 50%;
     left: 50%;
     margin: -10px 0px 0px -10px;
@@ -1385,11 +1375,11 @@ div input{
     position: absolute;
     background: transparent;
     border-radius: 50%;
-    height: 10px;
-    width: 10px;
+    height: 6px;
+    width: 6px;
     top: 50%;
     left: 50%;
-    margin: -5px 0px 0px -5px;
+    margin: -8px 0px 0px -8px;
     background-color: yellow;
   }
 
@@ -1398,10 +1388,10 @@ div input{
   .line-container2{
       position: relative;
       height: 22px;
-      width: 232px;
+      width: 210px;
       background-color: transparent;
       margin: auto;
-      margin-top: 26px;
+      margin: 15px 0 0 31px;
   }
 
   .button-prop-container2{
@@ -1525,6 +1515,11 @@ div input{
     width: 95px;
   }
 
-  #logo-anchor2{
-    border: 1px solid gray;
+
+
+  .single, ul, .gt1k, .social-media-anchor-add,
+  .search-bar{
+    display: none;
   }
+
+}
