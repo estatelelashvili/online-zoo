@@ -1,4 +1,4 @@
-@media(max-width: 320px){
+@media (min-width: 320px) and (max-width: 639px) {
     *{
         margin: 0;
         padding: 0;
@@ -708,7 +708,7 @@
         width: 220px;
     }
 
-    .single, ul, .man, .flowers, .arrow-left, .arrow-right,
+    .single, ul, .man, .small-man, .flowers, .arrow-left, .arrow-right,
      .catalog-grid,  .dragon-flower, .gvimra, .covid, .even,
      .trio-vector, .oldguy, .gauge, .leaf, .social-media-anchor-add,
      .search-bar{
