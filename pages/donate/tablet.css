@@ -1,4 +1,4 @@
-@media(max-width: 640px) {
+@media (min-width: 640px) and (max-width: 999px)  {
 
 html, body{
     width: 640px;
@@ -6,7 +6,7 @@ html, body{
     overflow-x: hidden;
     /* background: #000000; */
     background-color: #FFFFFF;
-    background-color: red;
+    /* background-color: red; */
     overflow-x: hidden;
 }
 

@@ -300,6 +300,10 @@ h6{
     width: 609px;
 }
 
+.small-man{
+    display: none;
+}
+
 .flowers{
     max-height: 605px;
     max-width: 293px;
