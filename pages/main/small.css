@@ -888,7 +888,7 @@
     }
 
     .burger-menu, .flowers, .man,
-    .dragon-flower, .gvimra, .catalog-grid, .catalog-grid, .catalog-grid-alter-mobile,
+    .dragon-flower, .gvimra, .catalog-grid, .catalog-grid-tablet, .catalog-grid-alter-mobile,
     .trio-vector-alt-mobile1, .trio-vector-alt-mobile2, .oldguy, .leaf, 
     .leaf-mobile, .leaf-tablet{
         display: none;
