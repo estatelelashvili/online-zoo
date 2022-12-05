@@ -1107,10 +1107,12 @@ div input{
     color: #929699;
     position: absolute;
     top: 15px;
-    right: 25px;
+    right: 10px;
+    left: 234px;
     transition: right 0.2s;
     font-family: "Trebuchet-Bold";
     font-size: 21px;
+    /* border: 1px solid red; */
   }
 
   .two-radio{

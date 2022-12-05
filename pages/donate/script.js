@@ -19,4 +19,35 @@ formElement.addEventListener('input', function () {
   }
 });
 
-get;
+// console.log(document.querySelector('input[type="radio"]:checked').value);
+document.querySelector('input[name=another-money]').value = 100;
+const moneyValues = document.querySelectorAll('.donate-amount-p');
+const radioBTNArr = document.querySelectorAll('.button-prop input');
+for (let i = 0; i < moneyValues.length; i++) {
+  radioBTNArr[i].value = moneyValues[i].innerText;
+}
+
+for (let i = 0; i < moneyValues.length; i++) {
+  radioBTNArr[i].addEventListener('change', (e) => {
+    document.querySelector('input[name=another-money]').value =
+      radioBTNArr[i].value;
+  });
+}
+
+document.getElementById('another-amount-id').addEventListener('submit', (e) => {
+  e.preventDefault();
+});
+document
+  .querySelector('input[name=another-money]')
+  .addEventListener('input', () => {
+    for (let i = 0; i < radioBTNArr.length; i++) {
+      if (
+        document.querySelector('input[name=another-money]').value ===
+        radioBTNArr[i].value
+      ) {
+        radioBTNArr[i].checked = true;
+      } else {
+        radioBTNArr[i].checked = false;
+      }
+    }
+  });
