@@ -1,0 +1,38 @@
+[
+    {
+      "name": "GIANT PANDAS",
+      "img": "../../assets/images/pandas.png",
+      "dietImg": "../../assets/icons/banana-bamboo_icon.png",
+      "area": "Native to Southwest China"
+    },
+    {
+      "name": "EAGLES",
+      "img": "../../assets/images/eagles.png",
+      "dietImg": "../../assets/icons/meet-fish_icon.png",
+      "area": "Native to South America"
+    },
+    {
+      "name": "CHEETAHS",
+      "img": "../../assets/images/cheetahs.png",
+      "dietImg": "../../assets/icons/meet-fish_icon.png",
+      "area": "Native to Africa"
+    },
+    {
+      "name": "GORILLAS",
+      "img": "../../assets/images/gorillaz.png",
+      "dietImg": "../../assets/icons/banana-bamboo_icon.png",
+      "area": "Native to Congo"
+    },
+    {
+      "name": "ALLIGATORS",
+      "img": "../../assets/images/alligators-small.png",
+      "dietImg": "../../assets/icons/meet-fish_icon.png",
+      "area": "Native to Southeastern United States"
+    },
+    {
+      "name": "PENGUINS",
+      "img": "../../assets/images/penguins.png",
+      "dietImg": "../../assets/icons/meet-fish_icon.png",
+      "area": "Native to Antarctica"
+    }
+  ]

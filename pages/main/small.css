@@ -326,20 +326,34 @@
         align-items: center;
     }
     .catalog-grid-outer{
-        height: 800px;
+        height: 820px;
         width: 1000px;
+        max-width: 980px;
         display: block;
+        margin: auto;
         margin-top: 0;
-        
+        overflow: hidden;
+        /* border: 1px solid red; */
     }
 
     .catalog-grid-alter-small{
        
         width: 970px;
         margin: 6px 0 0 15px;
+        margin-left: -2881px;
+        margin-left: -1911px;
+        margin-left: -951px;
+        margin-left: -1921px;
+        margin-left: -2891px;
+        margin-left: -3861px;
+        margin-left: -3858px;
         display: grid;
+        width: fit-content;
+        grid-auto-flow:column;  
         grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
         /* gap: 15px;*/
+        gap: 26px;
         row-gap: 72px; 
     }
 
@@ -886,6 +900,73 @@
         font-size: 16px;
         width: 228px;
     }
+/* PROGRESSBAR */
+    .button-prop-container {
+        background: transparent;
+        margin: auto;
+        margin-top: 50px;
+        width: 390px;
+        height: 8px;
+        display: flex;
+        justify-content: space-between;
+      }
+    
+    .button-prop {
+        position: relative;
+        margin: 0 0 0 0;
+        height: 8px;
+        width: 49px;
+        background-color: #F5F7F6;
+        /* background-color: black; */
+        border: 1px solid #FE9013;
+        border-left: none;
+        border-right: none;
+    }
+    
+    .button-prop input {
+        position: absolute;
+        top: -20px;
+        left: -1px;
+        right: 0;
+        bottom: 0;
+        width: 49px;
+        height: 38px;
+        opacity: 0.011;
+        z-index: 100;
+        cursor: pointer;
+    }
+    
+    .button-prop input:checked + #outer-circle {
+        visibility: visible;
+    }
+    
+      #outer-circle {
+        font-family: "Roboto-400";
+        color:#333B41;
+        visibility: hidden;
+        background: transparent;
+        background: #FE9013;
+        border-radius: 5px;
+        height: 8px;
+        width: 49px;
+        position: relative;
+        top: -1px;
+        bottom: 0;
+        right:1px;
+    }
+    
+    .first-radio{
+        border-left: 1px solid #FE9013;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+    }
+    .last-radio{
+        border-right: 1px solid #FE9013;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+    }
+
+    /* PROGRESSBAR */
 
     .burger-menu, .flowers, .man,
     .dragon-flower, .gvimra, .catalog-grid, .catalog-grid-tablet, .catalog-grid-alter-mobile,
