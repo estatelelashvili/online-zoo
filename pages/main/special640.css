@@ -1,0 +1,9 @@
+@media (min-width: 320px) and (max-width: 641px) {
+    .open-burger-menu-container{
+        display: block;
+        position: relative;
+        width: 100%;
+        height: fit-content;
+    }
+
+}
