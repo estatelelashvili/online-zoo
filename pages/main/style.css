@@ -519,7 +519,7 @@ h4{
     align-items: center;
     overflow: hidden;
     width: 1190px;
-    border: 1px solid purple;
+    /* border: 1px solid purple; */
 }
 
 .catalog-grid{
