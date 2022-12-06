@@ -273,7 +273,6 @@
  
 
     /* CATALOG */
-    
 
     .catalog-container{
         display: flex;
@@ -314,12 +313,16 @@
         overflow: hidden;
     }
 
-    .catalog-grid-alter-mobile{
+    .catalog-grid-alter-tablet{
         margin: 6px 0 0 20px;
+        margin-left: -3736px;
         display: grid;
+        grid-auto-flow:column;  
         grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
         gap: 26px;
         row-gap: 72px;
+        width: fit-content;
     }
 
     .arrow-left{
@@ -802,7 +805,7 @@
     }
 
     .single, ul, .man, .flowers,
-    .dragon-flower, .gvimra, .catalog-grid, 
+    .dragon-flower, .gvimra, .catalog-grid, .catalog-grid-alter-mobile,
     .trio-vector, .button-prop-container,.gauge, .leaf, 
     .leaf-mobile .social-media-anchor-add,
      .search-bar{
