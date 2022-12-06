@@ -231,7 +231,8 @@ function appendData(data) {
   //   shuffle();
 
   function GenerateCards() {
-    for (let j = 0; j < 8; j++) {
+    for (let j = 0; j < 12; j++) {
+      // for (let j = 0; j < 8; j++) {
       // for (let j = 0; j < 9; j++) {
       let randyBank = [];
 
@@ -296,22 +297,21 @@ function appendData(data) {
     clickR++;
     ourFirendsAllDiv.style.cssText = `transform: translateX(${offSet}px); transition: 1s;`;
 
-    if (clickR >= 3) {
-      // if (clickR >= 1) {
+    if (clickR >= 5) {
       if (window.innerWidth >= 1600) {
         offSet = 4716;
+        offSet = 7074;
       }
       if (window.innerWidth >= 1000 && window.innerWidth <= 1599) {
         offSet = 0;
       }
-
+      arrR.disabled = true;
       setTimeout(() => {
         ourFirendsSlider.innerHTML = '';
         ourFirendsAllDiv.style.cssText = `transform: translateX(${offSet}px); transition: 1s;`;
         GenerateCards();
         ourFirendsSlider.appendChild(ourFirendsAllDiv);
       }, 1000);
-
       clickR = 0;
     }
   });
@@ -326,14 +326,16 @@ function appendData(data) {
     }
 
     ourFirendsAllDiv.style.cssText = `transform: translateX(${offSet}px); transition: 1s;`;
-    if (clickL >= 3) {
+    if (clickL >= 5) {
       // if (clickL >= 1) {
       if (window.innerWidth >= 1600) {
         offSet = -3536;
+        offSet = -4715;
       }
       if (window.innerWidth >= 1000 && window.innerWidth <= 1599) {
         offSet = -3881;
         offSet = -3875;
+        offSet = -4845;
       }
 
       setTimeout(() => {

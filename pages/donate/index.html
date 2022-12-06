@@ -12,6 +12,39 @@
     <title>Online Zoo</title>
   </head>
   <body>
+    <div class="overlay" id="overlay-id"></div>
+    <div
+      class="open-burger-menu-container"
+      id="open-burger-menu-container-id"
+      style="display: none"
+    >
+      <div class="open-burger-menu" id="pop-up-menu-container-id">
+        <div class="logo-div">
+          <div class="logo" id="logo-anchor" style="border-color: #fe9013">
+            <h1 class="logo-inner" style="color: #fe9013">PetStory online</h1>
+            <img
+              style="
+                filter: contrast(0) sepia(90%) hue-rotate(19deg) saturate(500%)
+                  brightness(70%);
+                opacity: 0.7;
+                left: 9%;
+              "
+              class="bamboo-stick"
+              src="../../assets/icons/bamboo.png"
+              alt=""
+            />
+          </div>
+        </div>
+        <ul>
+          <li><a href="">About</a></li>
+          <li><a href="">Map</a></li>
+          <li><a href="">Zoos</a></li>
+          <li><a href="../donate/index.html">Donate</a></li>
+          <li><a href="">Contact us</a></li>
+        </ul>
+        <button id="burger-btn-menu-id">&#10006;</button>
+      </div>
+    </div>
     <header>
       <div class="logo-div">
         <div class="logo" id="logo-anchor">
@@ -24,7 +57,7 @@
         </div>
       </div>
       <nav>
-        <div class="burger-menu">
+        <div class="burger-menu" id="burger-control-id">
           <p></p>
           <p></p>
           <p></p>
