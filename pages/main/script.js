@@ -83,23 +83,42 @@ window.onresize = function () {
 
 //POP UP REWIEW
 if (window.innerWidth >= 320 && window.innerWidth <= 640) {
+  function closePopUpnClear(element, cont) {
+    element.remove();
+    cont.style.display = 'none';
+  }
   const testArr = document.querySelectorAll('.testimonials-item');
   const container = document.getElementById('popup-testimonial-id');
-  container.style.display = 'block';
+  const containerInner = document.getElementById('popup-testimonial-inner-id');
+  const closeBtn = document.getElementById('popup-testimonial-btn-id');
   for (let i = 0; i < testArr.length; i++) {
     testArr[i].addEventListener('click', () => {
-      container.appendChild(testArr[i]);
-      // const page = document.getElementsByTagName('body')[0];
-      // page.classList.add('noscroll');
+      let p_prime = testArr[i].cloneNode(true);
+      if (containerInner.innerHTML === '') {
+        container.style.display = 'block';
+        containerInner.appendChild(p_prime);
+      }
+
+      document.getElementById('overlay-id').style.display = 'block';
+      document.getElementById('overlay-id').style.backgroundColor =
+        'rgba(0, 0, 0, 0.3)';
+      document.getElementById('overlay-id').style.height = '4271px';
+      // document.getElementById('overlay-id').style.top = '3300px';
+
+      closeBtn.addEventListener('click', function () {
+        containerInner.innerHTML = '';
+        container.style.display = 'none';
+      });
     });
   }
 }
-const closeBtn = document.getElementById('popup-testimonial-btn-id');
-closeBtn.onclick = function () {
-  const container = document.getElementById('popup-testimonial-id');
-  // container.innerHTML = '';
-  container.style.display = 'none';
-};
+
+// const closeBtn = document.getElementById('popup-testimonial-btn-id');
+// closeBtn.onclick = function () {
+//   const container = document.getElementById('popup-testimonial-id');
+//   container.innerHTML = '';
+//   container.style.display = 'none';
+// };
 //////////////////////////
 // PROGRESSBAR/CAROUSEL
 const progressBarCar = document.getElementById('testimonials-container-id');
