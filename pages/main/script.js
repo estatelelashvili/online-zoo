@@ -186,14 +186,6 @@ fetch('./petsCarusel.json')
   });
 
 function appendData(data) {
-  // if (window.innerWidth <= 640 && window.innerWidth !== 639) {
-  //   window.onresize = function () {
-  //     location.reload();
-  //   };
-  //   document.getElementById('open-burger-menu-container-id').className =
-  //     'open-burger-menu-container-alt';
-  // }
-  /////////////////////////////////
   let ourFirendsSlider = document.getElementById('small-catalog-slider-id');
   let ourFirendsAllDiv = '';
 
@@ -214,6 +206,14 @@ function appendData(data) {
     ourFirendsAllDiv = document.getElementById('small-catalog-id');
     document.getElementById('catalog-id').style.display = 'none';
     ourFirendsAllDiv.className = 'catalog-grid-alter-small';
+  }
+  if (window.innerWidth >= 640 && window.innerWidth <= 999) {
+    window.onresize = function () {
+      location.reload();
+    };
+    ourFirendsAllDiv = document.getElementById('tablet-catalog-id');
+    document.getElementById('catalog-id').style.display = 'none';
+    ourFirendsAllDiv.className = 'catalog-grid-alter-tablet';
   }
 
   // console.log(ourFirendsAllDiv.className);
@@ -236,11 +236,21 @@ function appendData(data) {
       // for (let j = 0; j < 9; j++) {
       let randyBank = [];
 
-      while (randyBank.length < 6) {
-        let randy = randomInteger(0, 5);
-        if (randyBank.includes(data[randy])) {
-        } else {
-          randyBank.push(data[randy]);
+      if (window.innerWidth >= 640 && window.innerWidth <= 999) {
+        while (randyBank.length < 4) {
+          let randy = randomInteger(0, 3);
+          if (randyBank.includes(data[randy])) {
+          } else {
+            randyBank.push(data[randy]);
+          }
+        }
+      } else {
+        while (randyBank.length < 6) {
+          let randy = randomInteger(0, 5);
+          if (randyBank.includes(data[randy])) {
+          } else {
+            randyBank.push(data[randy]);
+          }
         }
       }
 
@@ -253,6 +263,9 @@ function appendData(data) {
         }
         if (window.innerWidth >= 1000 && window.innerWidth <= 1599) {
           image.style.cssText = `width:294px; height:294px;`;
+        }
+        if (window.innerWidth >= 640 && window.innerWidth <= 999) {
+          image.style.cssText = `width:285px; height:285px;`;
         }
         let DietImage = document.createElement('img');
         let overLay = document.createElement('div');
@@ -293,6 +306,9 @@ function appendData(data) {
     if (window.innerWidth >= 1000 && window.innerWidth <= 1599) {
       offSet -= 970;
     }
+    if (window.innerWidth >= 640 && window.innerWidth <= 999) {
+      offSet -= 626;
+    }
 
     clickR++;
     ourFirendsAllDiv.style.cssText = `transform: translateX(${offSet}px); transition: 1s;`;
@@ -303,6 +319,9 @@ function appendData(data) {
         offSet = 7074;
       }
       if (window.innerWidth >= 1000 && window.innerWidth <= 1599) {
+        offSet = 0;
+      }
+      if (window.innerWidth >= 640 && window.innerWidth <= 999) {
         offSet = 0;
       }
       arrR.disabled = true;
@@ -324,6 +343,9 @@ function appendData(data) {
     if (window.innerWidth >= 1000 && window.innerWidth <= 1599) {
       offSet += 970;
     }
+    if (window.innerWidth >= 640 && window.innerWidth <= 999) {
+      offSet += 626;
+    }
 
     ourFirendsAllDiv.style.cssText = `transform: translateX(${offSet}px); transition: 1s;`;
     if (clickL >= 5) {
@@ -336,6 +358,9 @@ function appendData(data) {
         offSet = -3881;
         offSet = -3875;
         offSet = -4845;
+      }
+      if (window.innerWidth >= 640 && window.innerWidth <= 999) {
+        offSet = -3756;
       }
 
       setTimeout(() => {
