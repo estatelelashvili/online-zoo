@@ -87,12 +87,22 @@
         margin: 0 10px 0 0;
     }
 
-    .open-burger-menu-container-alt{
+    .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0);
+        transition:  0.5s ease;
+      }
+
+    /* .open-burger-menu-container-alt{
         display: block;
         position: relative;
         width: 100%;
         height: fit-content;
-    }
+    } */
 
 
     .panda-section{
@@ -521,20 +531,30 @@
         margin-top: 30px;
         font-size: 24px;
     }
-
+    .testimonials-container-outer{
+        /* margin-top: 10px; */
+        width: 320px;
+        height: 379px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        overflow: hidden;
+    }
     .testimonials-container{
         width: 320px;
         height: 380px;
         height: 379px;
         flex-direction: column;
         
-        margin-top: 7px;
+        margin-top: 18px;
+        height: fit-content;
         
     }
     .testimonials-item{
         width: 299px;
         height: 109px;
         margin: auto;
+        margin-bottom: 15px;
         padding: 0;
     }
     .testimonials-item-container{
@@ -556,7 +576,7 @@
         margin: 10px 0 0 15px;
     }
 
-    .michael{
+    /* .michael{
         order: 1;
     }
     .mila{
@@ -564,7 +584,7 @@
     }
     .fredericka{
         order: 3;
-    }
+    } */
 
     .leaf-feedback-container{
         display: flex;
@@ -718,7 +738,7 @@
 
     .single, ul, .man, .small-man, .flowers, .arrow-left, .arrow-right,
      .catalog-grid,  .dragon-flower, .gvimra, .covid, .even,
-     .trio-vector, .oldguy, .gauge, .leaf, .social-media-anchor-add,
+     .trio-vector, .button-prop-container, .gauge, .leaf, .social-media-anchor-add,
      .search-bar{
         display: none;
     }

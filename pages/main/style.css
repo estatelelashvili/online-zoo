@@ -168,12 +168,31 @@ nav{
     height: fit-content;
     /* border: 1px solid red; */
 }
-.open-burger-menu-container-alt{
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0);
+    transition:  0.5s ease;
+    /* display: none; */
+  }
+  
+.overlay-more{
+    display: block;
+    background: rgba(0, 0, 0, 0.3);
+  }
+.noscroll {
+    position: fixed!important
+}
+
+/* .open-burger-menu-container-alt{
     display: block;
     position: relative;
     width: 100%;
     height: fit-content;
-}
+} */
 
 .open-burger-menu{
     position: absolute;
@@ -798,6 +817,12 @@ h4{
     width: 100%;
     width: 1600px;
     height: 775px;
+   
+}
+.testimonials-container-outer{
+    width: 1164px;
+    margin: auto;
+    overflow: hidden;
 }
 .testimonials-container{
     background-color: #FFFFFF;
@@ -807,10 +832,34 @@ h4{
     justify-content: space-between;
     margin: auto;
     margin-top: 32px;
+    width: fit-content;
 }
 
+.popup-testimonial{
+    /* width: 100%;
+    height: fit-content;
+    margin: auto;
+    padding-top: 10px;
+    
+    position: fixed;
+    top:10%;
+    left: 0;
+    background-color: darkgray; */
+    /* opacity: 0.8; */
+    display: none;
+}
+.popup-testimonial button{
+    border: none;
+    background: transparent;
+    position: absolute;
+    top: 4%;
+    left: 92%;
+    font-size: 25px;
+    cursor: pointer;
+}
 
 .testimonials-item{
+    margin-right: 29px;
     border-radius: 20px;
     padding: 10px;
     background-color: lightgrey;
@@ -1141,7 +1190,8 @@ div input{
 .button-prop-container {
     background: #fff;
     margin: auto;
-    margin-top: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     width: 599px;
     height: 8px;
     display: flex;

@@ -603,17 +603,26 @@
         font-size: 36px;
     }
 
+    .testimonials-container-outer{
+        width: 972px;
+        margin: auto;
+        overflow: hidden;
+        /* border: 1px solid purple; */
+    }
     .testimonials-container{
         width: 972px;
         height: 410px;
         flex-direction: row;
         margin-top: 17px;
+        margin-left: 15px;
+        width: fit-content;
     }
     .testimonials-item{
         width: 293px;
         height: 391px;
         margin: auto;
         padding: 0;
+        margin-right: 29px;
     }
     .testimonials-item-container{
         width: 265px;
@@ -635,7 +644,7 @@
         margin: 10px 0 0 15px;
     }
 
-    .michael{
+    /* .michael{
         order: 1;
     }
     .mila{
@@ -643,7 +652,7 @@
     }
     .fredericka{
         order: 3;
-    }
+    } */
     .testimonials-main-container{
         width: 1000px;
         height: 844px;
@@ -970,7 +979,7 @@
 
     .burger-menu, .flowers, .man,
     .dragon-flower, .gvimra, .catalog-grid, .catalog-grid-tablet, .catalog-grid-alter-mobile,
-    .trio-vector-alt-mobile1, .trio-vector-alt-mobile2, .oldguy, .leaf, 
+    .trio-vector-alt-mobile1, .trio-vector-alt-mobile2, .leaf, 
     .leaf-mobile, .leaf-tablet{
         display: none;
     }
