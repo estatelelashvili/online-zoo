@@ -311,6 +311,7 @@
         width: 640px;
         display: block;
         margin-top: 0;
+        overflow: hidden;
     }
 
     .catalog-grid-alter-mobile{
