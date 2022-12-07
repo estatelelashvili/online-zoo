@@ -219,15 +219,24 @@ nav{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    margin-left: 20px;
+    margin-top: 20px;
 }
 
 .open-burger-menu ul li{
     list-style: none;
+    margin-bottom: 10px;
 }
 
 .open-burger-menu ul li a{
     text-decoration: none;
-    color: black
+    color: #333B41;
+    cursor: pointer;
+    font-family: "Roboto-500";
+    font-size: 16px;
+}
+.open-burger-menu ul li a:hover{
+    color:#FE9013;
 }
 
 .open-burger-menu button{
