@@ -137,6 +137,17 @@ nav ul li a{
     width: 30px;
 }
 
+.open-burger-menu button{
+    border: none;
+    background: transparent;
+    position: absolute;
+    top: 4%;
+    left: 92%;
+    right: 10% !important;
+    font-size: 25px;
+    cursor: pointer;
+}
+
 .panda-bg{
     width: 640px;
     margin: auto;
