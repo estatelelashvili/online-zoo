@@ -1,6 +1,10 @@
-// document.getElementById('donate-btn').onclick = function () {
-//   location.href = '../donate/index.html';
-// };
+try {
+  document.getElementById('donate-btn').onclick = function () {
+    location.href = '../donate/index.html';
+  };
+} catch (error) {
+  console.log('No button');
+}
 
 document.getElementById('logo-anchor').onclick = function () {
   location.href = './index.html';
@@ -82,6 +86,7 @@ window.onresize = function () {
 // };
 
 //POP UP REWIEW
+
 if (window.innerWidth >= 320 && window.innerWidth <= 640) {
   function closePopUpnClear(element, cont) {
     element.remove();
